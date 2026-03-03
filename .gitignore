@@ -8,3 +8,5 @@ models/
 *.joblib
 runs/
 *.ipynb_checkpoints
+bert_9classes/
+bert_9classes_sqrt_rw_2ep/
