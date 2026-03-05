@@ -1,0 +1,6 @@
+type,true_class,pred_class,top_positive,top_negative
+correct,web_frontend,web_frontend,"frontend, разработчик, месяцев, информационные, программирование",
+incorrect,web_frontend,generic_it_ops,"месяцев, информационные, года, опыт, работы","декабрь, интеграция, алгоритм, интернет"
+correct,backend_general_dev,backend_general_dev,"программист, разработчик, разработка, программирование, технологии","год, опыт"
+incorrect,sysadmin_devops_network,generic_it_ops,"инженер, ремон, кабеля, настроика, месяца","ethernet, автоматизации, апрель"
+bias,sales_account,generic_it_ops,"специалист, месяцев, телекоммуникации, опыт, www",январь
