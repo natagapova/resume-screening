@@ -11,3 +11,5 @@ runs/
 bert_9classes/
 bert_9classes_sqrt_rw_2ep/
 bert_9classes_gdro/
+drafts/
+local_bert/
