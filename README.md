@@ -58,8 +58,6 @@ Key baseline (BERT + sqrt_rw) performance:
   - **TPR Gap (Worst Robust):** 0.329
   - **TPR Gap (Macro Robust):** 0.116
 
-For detailed configs and more results, see `notebooks/models/bert_9classes_final/training_config.json`.
-
 ## Notes
 
 - Certain folders and large files are excluded via `.gitignore`.
