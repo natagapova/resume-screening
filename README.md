@@ -1,31 +1,53 @@
 # Resume Screening
 
-This repository contains code, notebooks, and models for automated resume screening using BERT-based sequence classification. The aim is to classify resumes into several predefined categories to support recruitment workflows and candidate analysis.
+This repository provides code and Jupyter notebooks for automated resume screening using BERT-based sequence classification. The aim is to classify resumes into predefined categories to support recruitment workflows and candidate analysis.
+
+---
+
+## Important Note: Missing Files Due to `.gitignore`
+
+Several folders, large files, and checkpoints are intentionally **not included** in the repository and are specified in `.gitignore`, so you will not find the following:
+
+- **Any actual datasets** (`data/`)
+- **Trained or fine-tuned model checkpoints** (`models/`, `bert_9classes/`, `bert_9classes_sqrt_rw_2ep/`, `bert_9classes_gdro/`, etc.)
+- **Experiment logs/outputs** (`runs/`)
+- **Intermediate files** (`*.pkl`, `*.pt`, `*.joblib`, etc.)
+- **Notebooks in certain draft/working folders** or repeated directories
+- **EDA notebook** (`notebooks/00_eda.ipynb`)
+- Other files and folders as listed in the repository's `.gitignore`
+
+You are welcome to use the code and templates here, but you must supply your own data and generate your own models and results.
+
+---
 
 ## Contents Overview
 
-- **Model configuration and scripts**: BERT training scripts and configurations.
-- **Notebooks for experiments, analysis, and visualizations**.
-- **Preprocessing and data exploration scripts**.
-- **Results, evaluation metrics, and utility scripts**.
+- **Scripts and configuration templates** for BERT sequence classification (not including trained models)
+- **Jupyter notebooks** for experimentation, analysis, and visualization (some notebooks may not be present, see above)
+- **Code for preprocessing, data exploration, and analysis**
+
+---
 
 ## Notebook Guide
 
-Navigate the `notebooks/` folder for structured experimentation and analysis. Here’s a summary of the main notebook series:
+Within the `notebooks/` folder you’ll find:
 
-- **00_eda**: Exploratory Data Analysis (EDA) – an initial dive into the data.
-- **10_baseline**: A baseline experiment; serves as a simple, non-comprehensive initial model.
-- **20–29, 60–63**: Model training experiments, with each notebook exploring different training strategies, model variants, fairness interventions, and related methods.
-- **30–31**: Data-centric processing – notebooks focused on data cleaning, clustering, and other data transformation steps.
-- **40–42**: Deep-dive analyses of model fairness and interpretability, including fairness metrics and integrated gradients.
-- **50**: Generation of plots and figures tailored for inclusion in scientific manuscripts.
+- **10_baseline**: Example baseline experiment (requires user-provided data)
+- **20–29, 60–63**: Model training pipelines and fairness methods (requires your own data/models)
+- **30–31**: Notebooks for data-centric processing steps
+- **40–42**: Fairness/interpretability analysis code and workflow
+- **50**: Plot/figure generation notebooks
+
+Some notebook files (most notably `00_eda.ipynb`) are not included in the repository.
+
+---
 
 ## Directory Structure
 
-- `notebooks/` – Jupyter notebooks as described above.
-- `notebooks/models/` – Pretrained and fine-tuned model configurations.
-- `data/` – (git-ignored) Place your datasets here.
-- `runs/` – Training run outputs and logs (git-ignored).
+- `notebooks/` – Notebooks for experimentation (some may be excluded as above)
+- `figures/` - Plots, graphics, and other data generated from the notebooks
+
+---
 
 ## Getting Started
 
@@ -40,33 +62,34 @@ Navigate the `notebooks/` folder for structured experimentation and analysis. He
     ```
 
 3. **Add your data:**  
-   Place your datasets inside the `data/` folder.
+   Place your datasets inside a `data/` folder (not included in this repository).
 
-4. **Explore Notebooks:**  
-   Start with `00_eda` for EDA, and use the numbered guide above to pursue modeling, analysis, or visualization.
+4. **Explore notebooks, scripts, and configuration templates.**  
+   _Note: Most components require your own data; model checkpoints and some notebooks are not provided due to `.gitignore`._
+
+---
 
 ## Model & Config
 
 - **Model:** BERT for Sequence Classification (9 classes)
-- See `notebooks/models/bert_9classes_final/config.json` for model details.
+- **No trained model files/checkpoints are included in the repository**
+
+---
 
 ## Results
 
-Key baseline (BERT + sqrt_rw) performance:
-  - **Accuracy:** 0.609
-  - **Macro F1:** 0.621
-  - **TPR Gap (Worst Robust):** 0.329
-  - **TPR Gap (Macro Robust):** 0.116
+Reference metrics from the BERT + sqrt_rw baseline on private data (for context only):
+
+- **Accuracy:** 0.609
+- **Macro F1:** 0.621
+- **TPR Gap (Worst Robust):** 0.329
+- **TPR Gap (Macro Robust):** 0.116
+
+To reproduce these results, you will need to train your own models on your data.
+
+---
 
 ## Notes
 
-- Certain folders and large files are excluded via `.gitignore`.
-- The project supports research and experimentation in resume screening and fairness-aware modeling.
-
-## License
-
-Specify your license information here.
-
-## Contact
-
-Questions or collaboration proposals? Please open an issue or contact [your email or GitHub handle].
+- Many referenced files (datasets, model checkpoints, experimental logs, some notebook files) are **not** available due to `.gitignore`.
+- Intended for research and experimentation.
