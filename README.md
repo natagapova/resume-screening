@@ -1,3 +1,5 @@
+This information was last updated on Mar 3, 2026.
+
 # Resume Screening
 
 This repository provides code and Jupyter notebooks for automated resume screening using BERT-based sequence classification. The aim is to classify resumes into predefined categories to support recruitment workflows and candidate analysis.
