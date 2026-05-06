@@ -1,0 +1,10 @@
+{
+  "should_we_do_city_swap_on_english": true,
+  "should_we_train_again_immediately": false,
+  "recommended_first_move": "map English labels into the current 9-class space and evaluate existing strongest checkpoints first",
+  "why": [
+    "The dataset must be aligned to the current label space before city-swap numbers are interpretable.",
+    "Existing models may already transfer well enough to justify evaluation-before-retraining.",
+    "If transfer fails, the prepared English counterfactual slice becomes the benchmark for the next training wave."
+  ]
+}

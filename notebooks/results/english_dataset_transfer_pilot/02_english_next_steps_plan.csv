@@ -1,0 +1,5 @@
+priority,step,why,artifact
+1,Manual review of English->9-class mapping,Prevents garbage transfer metrics from label mismatch,02_english_category_mapping_review.csv
+2,Run existing strongest models on the English base eval slice,Checks out-of-domain generalization before any retraining,02_english_base_eval_slice.csv
+3,Run city-swap on the English counterfactual slice,Measures location sensitivity on English resumes directly,02_english_city_swap_counterfactuals.csv
+4,Only then decide whether to fine-tune challengers on English data,Avoids another 15 training runs if transfer already looks acceptable,decision_after_eval

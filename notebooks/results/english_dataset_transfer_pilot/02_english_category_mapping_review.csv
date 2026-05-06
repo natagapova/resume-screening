@@ -1,0 +1,37 @@
+Category,target_9_class,count
+Java Developer,backend_general_dev,200
+Data Science,technical_specialized,200
+Python Developer,backend_general_dev,200
+DevOps,sysadmin_devops_network,180
+SQL Developer,backend_general_dev,180
+React Developer,backend_general_dev,150
+Database,technical_specialized,150
+Web Designing,web_frontend,150
+Business Analyst,project_product,150
+Testing,tech_support_helpdesk,150
+DotNet Developer,backend_general_dev,140
+Software Developer,backend_general_dev,134
+Network Security Engineer,sysadmin_devops_network,120
+ETL Developer,backend_general_dev,120
+Full Stack Developer,backend_general_dev,102
+Digital Media,generic_it_ops,100
+SAP Developer,technical_specialized,100
+Cloud Engineer,sysadmin_devops_network,92
+Machine Learning Engineer,generic_it_ops,81
+Frontend Developer,web_frontend,76
+Backend Developer,backend_general_dev,76
+AI Engineer,technical_specialized,71
+Cybersecurity Analyst,sysadmin_devops_network,66
+QA Engineer,tech_support_helpdesk,61
+Database Administrator,technical_specialized,56
+UI/UX Designer,web_frontend,51
+Blockchain,technical_specialized,47
+Site Reliability Engineer,generic_it_ops,46
+Mobile Developer,backend_general_dev,46
+System Administrator,generic_it_ops,40
+Technical Lead,generic_it_ops,35
+Engineering Manager,it_governance_leadership,30
+Blockchain Developer,backend_general_dev,30
+Product Manager,project_product,25
+Principal Engineer,generic_it_ops,25
+Technical Writer,generic_it_ops,20

@@ -1,0 +1,37 @@
+raw_category,supercategory,mapping_method,count
+Data Science,technical_specialized,direct_map,189
+Python Developer,backend_general_dev,direct_map,186
+Java Developer,backend_general_dev,direct_map,185
+SQL Developer,backend_general_dev,direct_map,171
+DevOps,sysadmin_devops_network,direct_map,164
+Testing,tech_support_helpdesk,direct_map,148
+Web Designing,web_frontend,direct_map,146
+Business Analyst,project_product,direct_map,143
+Database,technical_specialized,direct_map,143
+React Developer,web_frontend,direct_map,142
+Software Developer,backend_general_dev,direct_map,134
+DotNet Developer,backend_general_dev,direct_map,130
+Network Security Engineer,sysadmin_devops_network,direct_map,117
+ETL Developer,backend_general_dev,direct_map,114
+Full Stack Developer,backend_general_dev,direct_map,102
+Digital Media,generic_it_ops,direct_map,98
+SAP Developer,technical_specialized,direct_map,95
+Cloud Engineer,sysadmin_devops_network,direct_map,92
+Machine Learning Engineer,technical_specialized,direct_map,81
+Backend Developer,backend_general_dev,direct_map,76
+Frontend Developer,web_frontend,direct_map,76
+AI Engineer,technical_specialized,direct_map,71
+Cybersecurity Analyst,sysadmin_devops_network,direct_map,66
+QA Engineer,tech_support_helpdesk,direct_map,61
+Database Administrator,technical_specialized,direct_map,56
+UI/UX Designer,web_frontend,direct_map,51
+Mobile Developer,backend_general_dev,direct_map,46
+Site Reliability Engineer,sysadmin_devops_network,direct_map,46
+Blockchain,technical_specialized,direct_map,43
+System Administrator,sysadmin_devops_network,direct_map,40
+Technical Lead,it_governance_leadership,direct_map,35
+Blockchain Developer,backend_general_dev,direct_map,30
+Engineering Manager,it_governance_leadership,direct_map,30
+Principal Engineer,it_governance_leadership,direct_map,25
+Product Manager,project_product,direct_map,25
+Technical Writer,generic_it_ops,direct_map,20

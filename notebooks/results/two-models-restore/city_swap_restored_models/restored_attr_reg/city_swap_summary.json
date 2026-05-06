@@ -1,0 +1,25 @@
+{
+  "family": "attr_reg",
+  "model_name": "restored_attr_reg",
+  "model_path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/two-models-restore/restored_models/attr_reg",
+  "accuracy": 0.5833030852994555,
+  "macro_f1": 0.6011648284423201,
+  "overall_flip_rate": 0.06315789473684211,
+  "per_swap_city": {
+    "Москва": {
+      "flip_rate": 0.020145190562613432
+    },
+    "Екатеринбург": {
+      "flip_rate": 0.039564428312159707
+    },
+    "Новосибирск": {
+      "flip_rate": 0.035934664246823955
+    },
+    "Краснодар": {
+      "flip_rate": 0.036297640653357534
+    },
+    "Воронеж": {
+      "flip_rate": 0.0279491833030853
+    }
+  }
+}

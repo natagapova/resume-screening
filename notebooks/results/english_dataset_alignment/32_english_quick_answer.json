@@ -1,0 +1,11 @@
+{
+  "dataset_ready_for_next_step": true,
+  "recommended_next_move": "run the strongest existing checkpoints on the English test split and the English city-swap counterfactual slice",
+  "processed_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment",
+  "n_rows_clean": 3377,
+  "n_rows_model_ready": 3377,
+  "n_rows_base_eval": 1496,
+  "n_rows_counterfactual": 6792
+}

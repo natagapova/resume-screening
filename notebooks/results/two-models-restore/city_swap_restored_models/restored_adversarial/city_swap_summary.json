@@ -1,0 +1,25 @@
+{
+  "family": "adversarial",
+  "model_name": "restored_adversarial",
+  "model_path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/two-models-restore/restored_models/adversarial",
+  "accuracy": 0.574410163339383,
+  "macro_f1": 0.5942314793308253,
+  "overall_flip_rate": 0.06188747731397459,
+  "per_swap_city": {
+    "Москва": {
+      "flip_rate": 0.016333938294010888
+    },
+    "Екатеринбург": {
+      "flip_rate": 0.039927404718693285
+    },
+    "Новосибирск": {
+      "flip_rate": 0.03321234119782214
+    },
+    "Краснодар": {
+      "flip_rate": 0.03248638838475499
+    },
+    "Воронеж": {
+      "flip_rate": 0.02250453720508167
+    }
+  }
+}
