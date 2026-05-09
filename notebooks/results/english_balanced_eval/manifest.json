@@ -1,4 +1,6 @@
 {
+  "role": "secondary_english_eval_slice",
+  "canonical_base_notebook": "notebooks/32_english_dataset_alignment.ipynb",
   "exports": [
     "english_balanced_8class_eval.csv",
     "class_counts_before_after.csv",

@@ -1,0 +1,6 @@
+check,status,value
+Has explicit category column,True,
+Has explicit location column,True,
+Has explicit source column,True,
+Median text length >= 80 words,False,
+Synthetic-like share < 0.70,True,0.0

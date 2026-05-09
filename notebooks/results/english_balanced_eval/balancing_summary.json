@@ -1,4 +1,8 @@
 {
+  "canonical_alignment_notebook": "notebooks/32_english_dataset_alignment.ipynb",
+  "canonical_benchmark_manifest_path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_benchmark_manifest.json",
+  "built_on_top_of_32": true,
+  "dependency_note": "Run 32 first so PROCESSED_EN parquet/splits and benchmark manifest exist.",
   "primary_full_dataset": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
   "primary_dataset_untouched": true,
   "project_ontology_n_classes": 9,

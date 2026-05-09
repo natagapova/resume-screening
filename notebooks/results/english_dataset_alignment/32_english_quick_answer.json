@@ -1,11 +1,23 @@
 {
+  "notebook_role": "canonical_english_benchmark_definition",
   "dataset_ready_for_next_step": true,
-  "recommended_next_move": "run the strongest existing checkpoints on the English test split and the English city-swap counterfactual slice",
+  "recommended_next_move": "Consume splits and parquet from processed_dir; use base_eval_slice and city_swap counterfactuals from results_dir for English probes. Run heavy model comparisons in dedicated eval notebooks (not 32). See secondary_eval_slice_notebook.",
+  "secondary_eval_slice_notebook": "notebooks/54_english_balanced_8class_eval.ipynb",
   "processed_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
   "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment",
   "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment",
+  "ontology_target_n_classes": 9,
+  "n_ontology_classes_present_in_corpus": 8,
+  "n_classes_meeting_stratified_split_floor": 8,
+  "ontology_classes_absent_in_english": [
+    "sales_account"
+  ],
+  "ontology_classes_weak_in_english": [],
+  "min_rows_for_stratified_split": 10,
+  "transfer_setting_note": "English is a reduced transfer setting relative to the full 9-class ontology when some classes are absent or too sparse for defensible multi-way evaluation; use notebook 54 for an evaluation-oriented balanced slice if needed.",
   "n_rows_clean": 3377,
   "n_rows_model_ready": 3377,
   "n_rows_base_eval": 1496,
-  "n_rows_counterfactual": 6792
+  "n_rows_counterfactual": 6792,
+  "benchmark_manifest": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_benchmark_manifest.json"
 }

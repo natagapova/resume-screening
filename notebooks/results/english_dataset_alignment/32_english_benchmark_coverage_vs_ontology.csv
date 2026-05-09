@@ -1,0 +1,10 @@
+ontology_class,n_rows_full_corpus,present_in_corpus,meets_stratified_split_floor
+backend_general_dev,1174,True,True
+technical_specialized,678,True,True
+sysadmin_devops_network,525,True,True
+web_frontend,415,True,True
+tech_support_helpdesk,209,True,True
+project_product,168,True,True
+generic_it_ops,118,True,True
+it_governance_leadership,90,True,True
+sales_account,0,False,False

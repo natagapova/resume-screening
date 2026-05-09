@@ -1,0 +1,61 @@
+{
+  "notebook": "32_english_dataset_alignment.ipynb",
+  "role": "canonical_english_benchmark_definition",
+  "ontology_target_classes": [
+    "backend_general_dev",
+    "web_frontend",
+    "sysadmin_devops_network",
+    "project_product",
+    "sales_account",
+    "tech_support_helpdesk",
+    "it_governance_leadership",
+    "technical_specialized",
+    "generic_it_ops"
+  ],
+  "ontology_target_n_classes": 9,
+  "min_rows_for_stratified_split": 10,
+  "ontology_classes_absent_in_english": [
+    "sales_account"
+  ],
+  "ontology_classes_weak_in_english": [],
+  "classes_in_stratified_splits": [
+    "backend_general_dev",
+    "technical_specialized",
+    "sysadmin_devops_network",
+    "web_frontend",
+    "tech_support_helpdesk",
+    "project_product",
+    "generic_it_ops",
+    "it_governance_leadership"
+  ],
+  "secondary_eval_slice_notebook": "notebooks/54_english_balanced_8class_eval.ipynb",
+  "transfer_setting_note": "English is a reduced transfer setting relative to the full 9-class ontology when some classes are absent or too sparse for defensible multi-way evaluation; use notebook 54 for an evaluation-oriented balanced slice if needed.",
+  "directories": {
+    "processed_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
+    "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment",
+    "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment"
+  },
+  "artifacts": {
+    "train_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1/train.csv",
+    "val_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1/val.csv",
+    "test_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1/test.csv",
+    "df_final_parquet": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1/df_final.parquet",
+    "label_to_supercategory": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1/label_to_supercategory_v1.csv",
+    "cleaning_summary": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_cleaning_summary.csv",
+    "mapping_review": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_category_mapping_review.csv",
+    "mapping_method_summary": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_mapping_method_summary.csv",
+    "benchmark_coverage": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_benchmark_coverage_vs_ontology.csv",
+    "weak_classes": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_weakly_supported_classes.csv",
+    "absent_classes": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_absent_ontology_classes.csv",
+    "split_summary": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_split_summary.csv",
+    "split_class_summary": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_split_class_summary.csv",
+    "location_summary": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_location_summary.csv",
+    "city_counts": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_city_counts.csv",
+    "base_eval_slice": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_base_eval_slice.csv",
+    "city_swap_counterfactuals": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_city_swap_counterfactuals.csv",
+    "quick_answer": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_quick_answer.json",
+    "manifest": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_benchmark_manifest.json",
+    "figure_target9_distribution": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment/32_english_target9_distribution.png",
+    "figure_source_distribution": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment/32_english_source_distribution.png"
+  }
+}

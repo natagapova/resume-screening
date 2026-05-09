@@ -1,5 +1,5 @@
 priority,step,why,artifact
-1,Manual review of English->9-class mapping,Prevents garbage transfer metrics from label mismatch,02_english_category_mapping_review.csv
-2,Run existing strongest models on the English base eval slice,Checks out-of-domain generalization before any retraining,02_english_base_eval_slice.csv
-3,Run city-swap on the English counterfactual slice,Measures location sensitivity on English resumes directly,02_english_city_swap_counterfactuals.csv
-4,Only then decide whether to fine-tune challengers on English data,Avoids another 15 training runs if transfer already looks acceptable,decision_after_eval
+1,Prefer 32 mapping audit for benchmark; use 02 mapping CSV only as pilot preview,32 is canonical; avoid treating 02 as source of truth for ontology mapping,notebooks/results/english_dataset_alignment/32_english_category_mapping_review.csv (canonical); 02_english_category_mapping_review.csv (pilot)
+2,Run models on English eval slices (prefer 32 base eval; 02 slice is legacy),32 aligns with benchmark splits; 02 replicates early pilot columns,32_english_base_eval_slice.csv (canonical); 02_english_base_eval_slice.csv (pilot)
+3,City-swap probes (prefer 32 counterfactuals),Same logic as pilot; 32 exports are the benchmark-standard paths,32_english_city_swap_counterfactuals.csv (canonical); 02_english_city_swap_counterfactuals.csv (pilot)
+4,Optional: soft eval mix via 54; fine-tune only if needed,54 reduces extreme skew without redefining the benchmark,notebooks/results/english_balanced_eval/english_balanced_8class_eval.csv

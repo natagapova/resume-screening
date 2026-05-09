@@ -1,0 +1,19 @@
+{
+  "notebook": "01_english_dataset_eda.ipynb",
+  "role": "english_dataset_exploratory_appendix",
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_eda",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_eda",
+  "canonical_benchmark_notebook": "notebooks/32_english_dataset_alignment.ipynb",
+  "exports": [
+    "01_english_eda_text_stats.csv",
+    "01_english_eda_text_stats.json",
+    "01_english_eda_category_counts.csv",
+    "01_english_eda_source_counts.csv",
+    "01_english_eda_location_counts_top200.csv",
+    "01_english_eda_readiness_checks.csv",
+    "01_english_eda_manifest.json"
+  ],
+  "figure_exports": [
+    "01_english_eda_word_count_hist.png"
+  ]
+}

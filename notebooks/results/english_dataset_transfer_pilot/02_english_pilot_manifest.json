@@ -1,0 +1,9 @@
+{
+  "notebook": "02_english_dataset_transfer_pilot.ipynb",
+  "role": "english_transfer_pilot_bridge",
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_transfer_pilot",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_transfer_pilot",
+  "canonical_benchmark": "notebooks/32_english_dataset_alignment.ipynb",
+  "secondary_eval": "notebooks/54_english_balanced_8class_eval.ipynb",
+  "pilot_artifacts_glob": "02_english_*.csv"
+}

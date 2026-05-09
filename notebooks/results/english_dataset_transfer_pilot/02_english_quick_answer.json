@@ -1,10 +1,13 @@
 {
   "should_we_do_city_swap_on_english": true,
+  "canonical_english_benchmark": "notebooks/32_english_dataset_alignment.ipynb",
+  "secondary_eval_slice": "notebooks/54_english_balanced_8class_eval.ipynb",
+  "pilot_role": "historical_bridge_lightweight_transfer_prep",
   "should_we_train_again_immediately": false,
   "recommended_first_move": "map English labels into the current 9-class space and evaluate existing strongest checkpoints first",
   "why": [
-    "The dataset must be aligned to the current label space before city-swap numbers are interpretable.",
+    "Canonical label space and splits come from notebook 32; pilot rows here are for continuity only.",
     "Existing models may already transfer well enough to justify evaluation-before-retraining.",
-    "If transfer fails, the prepared English counterfactual slice becomes the benchmark for the next training wave."
+    "If transfer fails, use 32 (and optionally 54) exports as the standard English benchmark artifacts."
   ]
 }

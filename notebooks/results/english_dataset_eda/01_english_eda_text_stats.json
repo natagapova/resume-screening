@@ -1,0 +1,9 @@
+{
+  "n_rows": 3500,
+  "n_cols": 15,
+  "empty_text_share": 0.0,
+  "median_chars": 203.0,
+  "median_words": 23.0,
+  "p10_words": 21.0,
+  "p90_words": 27.0
+}
