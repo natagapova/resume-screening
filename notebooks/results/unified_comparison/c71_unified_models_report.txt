@@ -1,18 +1,24 @@
-=== Unified models comparison ===
+=== Unified models comparison (71) ===
 total rows: 39
 main rows: 10
 challenger rows: 29
 
-Best overall by macro-F1:
-  label_smoothing_eps01_2ep | track=challenger | family=label_smoothing | macro_f1=0.623 | acc=0.608
+--- Ranking picks (04_ranking_picks_by_scope.csv) ---
+Scope: all_models
+  best_macro_f1: label_smoothing_eps01_2ep (label_smoothing_eps01_2ep) | f1=0.623 worst_gap=0.318 flip=-
+  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
+  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 flip=0.116
+  fairest_macro_robust_gap: weighted_sampler_citypow15_2ep (weighted_sampler_citypow15_2ep) | f1=0.561 worst_gap=0.288 flip=-
+  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
 
-Fairest overall by worst gap:
-  bert_gdro_eta01_2ep | track=main | family=groupdro | worst_gap=0.265 | macro_f1=0.553
+Scope: main_track_only
+  best_macro_f1: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
+  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
+  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 flip=0.116
+  fairest_macro_robust_gap: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
+  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
 
-Most robust on city swap (among available runs):
-  bert_scrubbing | track=main | family=scrubbing | flip=0.000 | macro_f1=0.611
-
-Family blocks:
+--- Family blocks (one line per model) ---
   family=adversarial
     [main] bert_adversarial | acc=0.574 | f1=0.594 | worst=0.429 | macro=0.132 | flip=-
 

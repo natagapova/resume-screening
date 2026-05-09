@@ -1,0 +1,11 @@
+scope,criterion,model_name,display_name,track,family_group,macro_f1,accuracy,worst_gap,overall_flip_rate,macro_gap
+all_models,best_macro_f1,label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,challenger,label_smoothing,0.6229579754516105,0.6083484573502722,0.3176470588235294,,
+all_models,best_accuracy,bert_9classes_final,Baseline,main,baseline,0.621,0.609,0.329,0.07713248638838476,
+all_models,fairest_worst_robust_gap,bert_gdro_eta01_2ep,GroupDRO η=0.1,main,groupdro,0.552505752091434,0.5477313974591651,0.2647058823529411,0.11578947368421053,
+all_models,fairest_macro_robust_gap,weighted_sampler_citypow15_2ep,weighted_sampler_citypow15_2ep,challenger,weighted_sampler,0.5609254778980721,0.5609800362976407,0.288235294117647,,0.1071853950474154
+all_models,most_robust_city_swap_flip,bert_scrubbing,Data Scrubbing,main,scrubbing,0.6105665172611873,0.5941923774954628,0.30000000000000004,0.0,
+main_track_only,best_macro_f1,bert_9classes_final,Baseline,main,baseline,0.621,0.609,0.329,0.07713248638838476,
+main_track_only,best_accuracy,bert_9classes_final,Baseline,main,baseline,0.621,0.609,0.329,0.07713248638838476,
+main_track_only,fairest_worst_robust_gap,bert_gdro_eta01_2ep,GroupDRO η=0.1,main,groupdro,0.552505752091434,0.5477313974591651,0.2647058823529411,0.11578947368421053,
+main_track_only,fairest_macro_robust_gap,bert_scrubbing,Data Scrubbing,main,scrubbing,0.6105665172611873,0.5941923774954628,0.30000000000000004,0.0,0.11207720185252505
+main_track_only,most_robust_city_swap_flip,bert_scrubbing,Data Scrubbing,main,scrubbing,0.6105665172611873,0.5941923774954628,0.30000000000000004,0.0,

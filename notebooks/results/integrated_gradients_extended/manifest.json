@@ -1,0 +1,45 @@
+{
+  "project": "integrated_gradients_extended",
+  "device": "mps",
+  "subset_seed": 41,
+  "subset_max": 2800,
+  "ig_steps": 18,
+  "models": [
+    {
+      "slug": "baseline",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final",
+      "title": "Baseline"
+    },
+    {
+      "slug": "scrubbing",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_scrubbing",
+      "title": "Data scrubbing"
+    },
+    {
+      "slug": "gdro",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_gdro_eta01_2ep",
+      "title": "GroupDRO \u03b7=0.1"
+    },
+    {
+      "slug": "focal",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_focal_loss",
+      "title": "Focal loss"
+    },
+    {
+      "slug": "label_smooth",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_label_smoothing",
+      "title": "Label smoothing"
+    },
+    {
+      "slug": "debiased",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_debiased_combo",
+      "title": "Debiased combo"
+    },
+    {
+      "slug": "oversample",
+      "path": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_oversample_only",
+      "title": "Oversample only"
+    }
+  ],
+  "subset_n": 2800
+}
