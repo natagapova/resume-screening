@@ -1,0 +1,13 @@
+{
+  "exports": [
+    "english_balanced_8class_eval.csv",
+    "class_counts_before_after.csv",
+    "balancing_summary.json",
+    "SAMPLING_NOTE.md",
+    "CHANGES_FROM_HARD_90CAP.md",
+    "english_eval_hard_90cap_archive.csv"
+  ],
+  "figures": [
+    "fig_class_counts_before_after.png"
+  ]
+}
