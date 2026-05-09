@@ -1,0 +1,9 @@
+{
+  "baseline_worst_gap": 0.329,
+  "baseline_macro_gap": 0.116,
+  "baseline_acc": 0.609,
+  "scrubbing_worst_gap": 0.3,
+  "adversarial_worst_gap": 0.4294117647058823,
+  "top_class_tpr_gap": 0.3294117647058824,
+  "lowest_city_acc_n_ge_40": 0.4889
+}

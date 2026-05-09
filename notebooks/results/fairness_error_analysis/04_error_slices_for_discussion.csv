@@ -1,0 +1,17 @@
+slice_type,supercategory,worst_city,best_city,tpr_worst,tpr_best,tpr_gap,n_cities_in_robust_eval,city_accuracy
+class_x_city_tpr,backend_general_dev,Санкт-Петербург,Москва,0.4411764705882353,0.7705882352941177,0.3294117647058824,3,
+class_x_city_tpr,generic_it_ops,Other,Москва,0.569811320754717,0.702928870292887,0.13311754953817,6,
+class_x_city_tpr,technical_specialized,Other,Москва,0.4557823129251701,0.5885167464114832,0.1327344334863131,3,
+class_x_city_tpr,project_product,Other,Санкт-Петербург,0.4885496183206106,0.6125,0.1239503816793893,3,
+class_x_city_tpr,it_governance_leadership,Other,Москва,0.5104166666666666,0.6286549707602339,0.1182383040935672,3,
+class_x_city_tpr,sales_account,Санкт-Петербург,Other,0.4727272727272727,0.5844155844155844,0.1116883116883116,3,
+class_x_city_tpr,web_frontend,Москва,Other,0.5373134328358209,0.5882352941176471,0.0509218612818261,2,
+class_x_city_tpr,tech_support_helpdesk,Санкт-Петербург,Other,0.4166666666666667,0.4473684210526316,0.0307017543859648,3,
+low_city_accuracy,,Омск,,,,,45,0.4889
+low_city_accuracy,,Нижний Новгород,,,,,83,0.5181
+low_city_accuracy,,Ярославль,,,,,48,0.5208
+low_city_accuracy,,Тюмень,,,,,47,0.5319
+low_city_accuracy,,Самара,,,,,107,0.5421
+low_city_accuracy,,Пермь,,,,,56,0.5536
+low_city_accuracy,,Новосибирск,,,,,126,0.5635
+low_city_accuracy,,Краснодар,,,,,158,0.5696
