@@ -29,6 +29,8 @@
     "it_governance_leadership"
   ],
   "secondary_eval_slice_notebook": "notebooks/54_english_balanced_8class_eval.ipynb",
+  "adversarial_benchmark_design_notebook": "notebooks/55_adversarial_eval_design.ipynb",
+  "english_model_eval_notebook_folder": "notebooks/english/",
   "transfer_setting_note": "English is a reduced transfer setting relative to the full 9-class ontology when some classes are absent or too sparse for defensible multi-way evaluation; use notebook 54 for an evaluation-oriented balanced slice if needed.",
   "directories": {
     "processed_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
@@ -56,6 +58,7 @@
     "quick_answer": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_quick_answer.json",
     "manifest": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment/32_english_benchmark_manifest.json",
     "figure_target9_distribution": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment/32_english_target9_distribution.png",
-    "figure_source_distribution": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment/32_english_source_distribution.png"
+    "figure_source_distribution": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment/32_english_source_distribution.png",
+    "adversarial_design_planned_outputs": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/adversarial_eval_design/PLANNED_OUTPUTS.json"
   }
 }

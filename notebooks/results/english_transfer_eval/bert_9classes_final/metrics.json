@@ -1,0 +1,427 @@
+{
+  "model_run_id": "bert_9classes_final",
+  "per_dataset": {
+    "english_train": {
+      "accuracy": 0.11214557765552265,
+      "macro_f1": 0.05641677845838192,
+      "weighted_f1": 0.07888238217375307,
+      "n_evaluated": 2363,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.6333333333333333,
+          "recall": 0.023114355231143552,
+          "f1-score": 0.04460093896713615,
+          "support": 822.0
+        },
+        "generic_it_ops": {
+          "precision": 0.25,
+          "recall": 0.012048192771084338,
+          "f1-score": 0.022988505747126436,
+          "support": 83.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 63.0
+        },
+        "project_product": {
+          "precision": 0.0660377358490566,
+          "recall": 0.8898305084745762,
+          "f1-score": 0.12295081967213115,
+          "support": 118.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 367.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 146.0
+        },
+        "technical_specialized": {
+          "precision": 0.19561815336463223,
+          "recall": 0.26371308016877637,
+          "f1-score": 0.22461814914645103,
+          "support": 474.0
+        },
+        "web_frontend": {
+          "precision": 0.4411764705882353,
+          "recall": 0.05172413793103448,
+          "f1-score": 0.09259259259259259,
+          "support": 290.0
+        },
+        "accuracy": 0.11214557765552265,
+        "macro avg": {
+          "precision": 0.17624063257058417,
+          "recall": 0.13782558606406833,
+          "f1-score": 0.05641677845838192,
+          "support": 2363.0
+        },
+        "weighted avg": {
+          "precision": 0.32577513076411874,
+          "recall": 0.11214557765552265,
+          "f1-score": 0.07888238217375307,
+          "support": 2363.0
+        }
+      },
+      "rows_total_in_csv": 2363,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_train.csv"
+    },
+    "english_val": {
+      "accuracy": 0.10059171597633136,
+      "macro_f1": 0.047514111516652364,
+      "weighted_f1": 0.06418696866578572,
+      "n_evaluated": 507,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 1.0,
+          "recall": 0.011363636363636364,
+          "f1-score": 0.02247191011235955,
+          "support": 176.0
+        },
+        "generic_it_ops": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 17.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 14.0
+        },
+        "project_product": {
+          "precision": 0.06534090909090909,
+          "recall": 0.92,
+          "f1-score": 0.1220159151193634,
+          "support": 25.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 79.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 31.0
+        },
+        "technical_specialized": {
+          "precision": 0.17557251908396945,
+          "recall": 0.22549019607843138,
+          "f1-score": 0.19742489270386265,
+          "support": 102.0
+        },
+        "web_frontend": {
+          "precision": 0.42857142857142855,
+          "recall": 0.047619047619047616,
+          "f1-score": 0.08571428571428572,
+          "support": 63.0
+        },
+        "accuracy": 0.10059171597633136,
+        "macro avg": {
+          "precision": 0.18549831741625636,
+          "recall": 0.13383032000679063,
+          "f1-score": 0.047514111516652364,
+          "support": 507.0
+        },
+        "weighted avg": {
+          "precision": 0.43893869758153375,
+          "recall": 0.10059171597633136,
+          "f1-score": 0.06418696866578572,
+          "support": 507.0
+        }
+      },
+      "rows_total_in_csv": 507,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_val.csv"
+    },
+    "english_test": {
+      "accuracy": 0.11637080867850098,
+      "macro_f1": 0.055912625805098926,
+      "weighted_f1": 0.0808849906005852,
+      "n_evaluated": 507,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.6666666666666666,
+          "recall": 0.022727272727272728,
+          "f1-score": 0.04395604395604396,
+          "support": 176.0
+        },
+        "generic_it_ops": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 18.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 13.0
+        },
+        "project_product": {
+          "precision": 0.069164265129683,
+          "recall": 0.96,
+          "f1-score": 0.12903225806451613,
+          "support": 25.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 79.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 32.0
+        },
+        "technical_specialized": {
+          "precision": 0.21212121212121213,
+          "recall": 0.27450980392156865,
+          "f1-score": 0.23931623931623933,
+          "support": 102.0
+        },
+        "web_frontend": {
+          "precision": 0.75,
+          "recall": 0.04838709677419355,
+          "f1-score": 0.09090909090909091,
+          "support": 62.0
+        },
+        "accuracy": 0.11637080867850098,
+        "macro avg": {
+          "precision": 0.18866134932417353,
+          "recall": 0.14506935260255943,
+          "f1-score": 0.055912625805098926,
+          "support": 507.0
+        },
+        "weighted avg": {
+          "precision": 0.36922840946339064,
+          "recall": 0.11637080867850098,
+          "f1-score": 0.0808849906005852,
+          "support": 507.0
+        }
+      },
+      "rows_total_in_csv": 507,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_test.csv"
+    },
+    "english_soft_eval_slice": {
+      "accuracy": 0.12261806130903065,
+      "macro_f1": 0.05844804284681466,
+      "weighted_f1": 0.0749849791727676,
+      "n_evaluated": 2414,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.5,
+          "recall": 0.015748031496062992,
+          "f1-score": 0.030534351145038167,
+          "support": 635.0
+        },
+        "generic_it_ops": {
+          "precision": 0.16666666666666666,
+          "recall": 0.00847457627118644,
+          "f1-score": 0.016129032258064516,
+          "support": 118.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 90.0
+        },
+        "project_product": {
+          "precision": 0.09069212410501193,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.1648590021691974,
+          "support": 168.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 392.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 209.0
+        },
+        "technical_specialized": {
+          "precision": 0.1890547263681592,
+          "recall": 0.25277161862527714,
+          "f1-score": 0.21631878557874762,
+          "support": 451.0
+        },
+        "web_frontend": {
+          "precision": 0.5277777777777778,
+          "recall": 0.05413105413105413,
+          "f1-score": 0.09819121447028424,
+          "support": 351.0
+        },
+        "accuracy": 0.12261806130903065,
+        "macro avg": {
+          "precision": 0.16379903276862395,
+          "recall": 0.13732079836505395,
+          "f1-score": 0.05844804284681466,
+          "support": 2414.0
+        },
+        "weighted avg": {
+          "precision": 0.25804334097280385,
+          "recall": 0.12261806130903065,
+          "f1-score": 0.0749849791727676,
+          "support": 2414.0
+        }
+      },
+      "rows_total_in_csv": 2414,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_soft_eval_slice.csv"
+    },
+    "english_base_eval_slice": {
+      "accuracy": 0.142379679144385,
+      "macro_f1": 0.0640497521400942,
+      "weighted_f1": 0.09742946128698322,
+      "n_evaluated": 1496,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.5454545454545454,
+          "recall": 0.022857142857142857,
+          "f1-score": 0.043875685557586835,
+          "support": 525.0
+        },
+        "generic_it_ops": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 61.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "project_product": {
+          "precision": 0.091796875,
+          "recall": 0.912621359223301,
+          "f1-score": 0.1668145519077196,
+          "support": 103.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 182.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 94.0
+        },
+        "technical_specialized": {
+          "precision": 0.23399014778325122,
+          "recall": 0.29141104294478526,
+          "f1-score": 0.25956284153005466,
+          "support": 326.0
+        },
+        "web_frontend": {
+          "precision": 0.41379310344827586,
+          "recall": 0.06091370558375635,
+          "f1-score": 0.10619469026548672,
+          "support": 197.0
+        },
+        "accuracy": 0.142379679144385,
+        "macro avg": {
+          "precision": 0.14278163018734139,
+          "recall": 0.14308925006766507,
+          "f1-score": 0.0640497521400942,
+          "support": 1496.0
+        },
+        "weighted avg": {
+          "precision": 0.30321974869337337,
+          "recall": 0.142379679144385,
+          "f1-score": 0.09742946128698322,
+          "support": 1496.0
+        }
+      },
+      "rows_total_in_csv": 1496,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_base_eval_slice.csv"
+    }
+  },
+  "datasets": [
+    {
+      "dataset_id": "english_train",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_train.csv",
+      "confusion_matrix_png": "figures/english_transfer_eval/bert_9classes_final/confusion_matrix_english_train.png"
+    },
+    {
+      "dataset_id": "english_val",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_val.csv",
+      "confusion_matrix_png": "figures/english_transfer_eval/bert_9classes_final/confusion_matrix_english_val.png"
+    },
+    {
+      "dataset_id": "english_test",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_test.csv",
+      "confusion_matrix_png": "figures/english_transfer_eval/bert_9classes_final/confusion_matrix_english_test.png"
+    },
+    {
+      "dataset_id": "english_soft_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_soft_eval_slice.csv",
+      "confusion_matrix_png": "figures/english_transfer_eval/bert_9classes_final/confusion_matrix_english_soft_eval_slice.png"
+    },
+    {
+      "dataset_id": "english_base_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_transfer_eval/bert_9classes_final/predictions_english_base_eval_slice.csv",
+      "confusion_matrix_png": "figures/english_transfer_eval/bert_9classes_final/confusion_matrix_english_base_eval_slice.png"
+    }
+  ]
+}

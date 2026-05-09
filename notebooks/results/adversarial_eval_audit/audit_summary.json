@@ -1,0 +1,27 @@
+{
+  "source_pairs_csv": "notebooks/results/adversarial_resume_pairs/adversarial_resume_pairs.csv",
+  "n_pairs": 208,
+  "n_unique_anchors": 208,
+  "attribute_counts": {
+    "city_location": 208
+  },
+  "class_counts": {
+    "backend_general_dev": 67,
+    "technical_specialized": 46,
+    "web_frontend": 32,
+    "sysadmin_devops_network": 25,
+    "project_product": 17,
+    "tech_support_helpdesk": 11,
+    "generic_it_ops": 9,
+    "it_governance_leadership": 1
+  },
+  "validation_status_counts": {
+    "validated": 208
+  },
+  "median_char_len_anchor": 4308.0,
+  "median_abs_relative_len_change": 0.0010482088540530547,
+  "median_token_overlap_proxy": 0.994310088060088,
+  "n_issue_identical": 0,
+  "n_issue_empty_cf": 0,
+  "clean_enough_for_model_eval": true
+}

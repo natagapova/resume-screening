@@ -1,0 +1,30 @@
+{
+  "generator_notebook": "56_adversarial_resume_pair_generation.ipynb",
+  "generator_version": "v1_rule_based",
+  "spec_path": "notebooks/results/adversarial_eval_design/adversarial_benchmark_spec.json",
+  "utc_generated": "2026-05-09T22:59:45.484489+00:00",
+  "approved_attributes": [
+    "age_cue",
+    "city_location",
+    "gendered_cue",
+    "name_optional"
+  ],
+  "summary": {
+    "n_test_rows": 507,
+    "n_pairs": 208,
+    "counts_by_attribute": {
+      "city_location": 208
+    },
+    "counts_by_class": {
+      "backend_general_dev": 67,
+      "generic_it_ops": 9,
+      "it_governance_leadership": 1,
+      "project_product": 17,
+      "sysadmin_devops_network": 25,
+      "tech_support_helpdesk": 11,
+      "technical_specialized": 46,
+      "web_frontend": 32
+    },
+    "output_csv": "notebooks/results/adversarial_resume_pairs/adversarial_resume_pairs.csv"
+  }
+}

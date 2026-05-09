@@ -1,0 +1,25 @@
+{
+  "downstream_metrics": [
+    {
+      "name": "flip_rate",
+      "description": "Fraction of pairs where predicted argmax class changes anchor→variant."
+    },
+    {
+      "name": "score_delta_true_class",
+      "description": "Delta in logit or probability for gold supercategory."
+    },
+    {
+      "name": "per_attribute_robustness",
+      "description": "Flip rate and score delta stratified by attribute_edited."
+    },
+    {
+      "name": "confidence_shift",
+      "description": "Change in max prob or predictive entropy between anchor and variant."
+    },
+    {
+      "name": "correct_anchor_slice",
+      "description": "Metrics restricted to pairs where anchor prediction equals gold label."
+    }
+  ],
+  "reporting": "Prefer bootstrap CIs; store per-pair logits or probs for audit."
+}

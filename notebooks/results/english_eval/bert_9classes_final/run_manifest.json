@@ -1,0 +1,51 @@
+{
+  "model_run_id": "bert_9classes_final",
+  "repo_root": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository",
+  "resolved_model_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final",
+  "model_resolution_tried": [
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/english/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/models/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final"
+  ],
+  "device": "mps",
+  "batch_size": 16,
+  "max_length": 128,
+  "seed": 42,
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_eval/bert_9classes_final",
+  "pid": 9591,
+  "english_pipeline_note": "Data from 32 (alignment) / 54 (soft slice); see canonical manifest in english_dataset_alignment.",
+  "metrics_json": "notebooks/results/english_eval/bert_9classes_final/metrics.json",
+  "completed_datasets": [
+    {
+      "dataset_id": "english_train",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final/predictions_english_train.csv",
+      "confusion_matrix_png": "figures/english_eval/bert_9classes_final/confusion_matrix_english_train.png"
+    },
+    {
+      "dataset_id": "english_val",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final/predictions_english_val.csv",
+      "confusion_matrix_png": "figures/english_eval/bert_9classes_final/confusion_matrix_english_val.png"
+    },
+    {
+      "dataset_id": "english_test",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final/predictions_english_test.csv",
+      "confusion_matrix_png": "figures/english_eval/bert_9classes_final/confusion_matrix_english_test.png"
+    },
+    {
+      "dataset_id": "english_soft_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final/predictions_english_soft_eval_slice.csv",
+      "confusion_matrix_png": "figures/english_eval/bert_9classes_final/confusion_matrix_english_soft_eval_slice.png"
+    },
+    {
+      "dataset_id": "english_base_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_9classes_final/predictions_english_base_eval_slice.csv",
+      "confusion_matrix_png": "figures/english_eval/bert_9classes_final/confusion_matrix_english_base_eval_slice.png"
+    }
+  ]
+}

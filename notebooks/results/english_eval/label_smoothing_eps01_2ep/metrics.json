@@ -1,0 +1,427 @@
+{
+  "model_run_id": "label_smoothing_eps01_2ep",
+  "per_dataset": {
+    "english_train": {
+      "accuracy": 0.21244181125687686,
+      "macro_f1": 0.0664369302228339,
+      "weighted_f1": 0.09336446295046283,
+      "n_evaluated": 2363,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 822.0
+        },
+        "generic_it_ops": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 83.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 63.0
+        },
+        "project_product": {
+          "precision": 0.10989010989010989,
+          "recall": 0.0847457627118644,
+          "f1-score": 0.09569377990430622,
+          "support": 118.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 367.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 146.0
+        },
+        "technical_specialized": {
+          "precision": 0.210004506534475,
+          "recall": 0.9831223628691983,
+          "f1-score": 0.3460824359450427,
+          "support": 474.0
+        },
+        "web_frontend": {
+          "precision": 0.6046511627906976,
+          "recall": 0.0896551724137931,
+          "f1-score": 0.15615615615615616,
+          "support": 290.0
+        },
+        "accuracy": 0.21244181125687686,
+        "macro avg": {
+          "precision": 0.10272730880169806,
+          "recall": 0.1286136997772062,
+          "f1-score": 0.0664369302228339,
+          "support": 2363.0
+        },
+        "weighted avg": {
+          "precision": 0.12181887696727738,
+          "recall": 0.21244181125687686,
+          "f1-score": 0.09336446295046283,
+          "support": 2363.0
+        }
+      },
+      "rows_total_in_csv": 2363,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_train.csv"
+    },
+    "english_val": {
+      "accuracy": 0.20907297830374755,
+      "macro_f1": 0.0695522729875186,
+      "weighted_f1": 0.08905958965415141,
+      "n_evaluated": 507,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 176.0
+        },
+        "generic_it_ops": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 17.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 14.0
+        },
+        "project_product": {
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1-score": 0.2,
+          "support": 25.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 79.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 31.0
+        },
+        "technical_specialized": {
+          "precision": 0.2076271186440678,
+          "recall": 0.9607843137254902,
+          "f1-score": 0.34146341463414637,
+          "support": 102.0
+        },
+        "web_frontend": {
+          "precision": 0.375,
+          "recall": 0.047619047619047616,
+          "f1-score": 0.08450704225352113,
+          "support": 63.0
+        },
+        "accuracy": 0.20907297830374755,
+        "macro avg": {
+          "precision": 0.08695856873822977,
+          "recall": 0.1342670401493931,
+          "f1-score": 0.0695522729875186,
+          "support": 507.0
+        },
+        "weighted avg": {
+          "precision": 0.09823070237020694,
+          "recall": 0.20907297830374755,
+          "f1-score": 0.08905958965415141,
+          "support": 507.0
+        }
+      },
+      "rows_total_in_csv": 507,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_val.csv"
+    },
+    "english_test": {
+      "accuracy": 0.1992110453648915,
+      "macro_f1": 0.05945205522049483,
+      "weighted_f1": 0.07995103519866738,
+      "n_evaluated": 507,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 176.0
+        },
+        "generic_it_ops": {
+          "precision": 0.3333333333333333,
+          "recall": 0.05555555555555555,
+          "f1-score": 0.09523809523809523,
+          "support": 18.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 13.0
+        },
+        "project_product": {
+          "precision": 0.0625,
+          "recall": 0.04,
+          "f1-score": 0.04878048780487805,
+          "support": 25.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 79.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 32.0
+        },
+        "technical_specialized": {
+          "precision": 0.20250521920668058,
+          "recall": 0.9509803921568627,
+          "f1-score": 0.33390705679862304,
+          "support": 102.0
+        },
+        "web_frontend": {
+          "precision": 0.25,
+          "recall": 0.03225806451612903,
+          "f1-score": 0.05714285714285714,
+          "support": 62.0
+        },
+        "accuracy": 0.1992110453648915,
+        "macro avg": {
+          "precision": 0.09425983917111265,
+          "recall": 0.11986600135872748,
+          "f1-score": 0.05945205522049483,
+          "support": 507.0
+        },
+        "weighted avg": {
+          "precision": 0.08622886066879965,
+          "recall": 0.1992110453648915,
+          "f1-score": 0.07995103519866738,
+          "support": 507.0
+        }
+      },
+      "rows_total_in_csv": 507,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_test.csv"
+    },
+    "english_soft_eval_slice": {
+      "accuracy": 0.1992543496271748,
+      "macro_f1": 0.06445599378542127,
+      "weighted_f1": 0.08748709501528752,
+      "n_evaluated": 2414,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 635.0
+        },
+        "generic_it_ops": {
+          "precision": 0.09090909090909091,
+          "recall": 0.00847457627118644,
+          "f1-score": 0.015503875968992248,
+          "support": 118.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 90.0
+        },
+        "project_product": {
+          "precision": 0.14953271028037382,
+          "recall": 0.09523809523809523,
+          "f1-score": 0.11636363636363636,
+          "support": 168.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 392.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 209.0
+        },
+        "technical_specialized": {
+          "precision": 0.19486271036315322,
+          "recall": 0.975609756097561,
+          "f1-score": 0.32484311554079,
+          "support": 451.0
+        },
+        "web_frontend": {
+          "precision": 0.631578947368421,
+          "recall": 0.06837606837606838,
+          "f1-score": 0.12339331619537275,
+          "support": 351.0
+        },
+        "accuracy": 0.1992543496271748,
+        "macro avg": {
+          "precision": 0.11854260654678211,
+          "recall": 0.12752205510921233,
+          "f1-score": 0.06445599378542127,
+          "support": 2414.0
+        },
+        "weighted avg": {
+          "precision": 0.14308867479472803,
+          "recall": 0.1992543496271748,
+          "f1-score": 0.08748709501528752,
+          "support": 2414.0
+        }
+      },
+      "rows_total_in_csv": 2414,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_soft_eval_slice.csv"
+    },
+    "english_base_eval_slice": {
+      "accuracy": 0.21991978609625668,
+      "macro_f1": 0.0475393620807854,
+      "weighted_f1": 0.08372327666342726,
+      "n_evaluated": 1496,
+      "classification_report": {
+        "backend_general_dev": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 525.0
+        },
+        "generic_it_ops": {
+          "precision": 0.125,
+          "recall": 0.01639344262295082,
+          "f1-score": 0.028985507246376812,
+          "support": 61.0
+        },
+        "it_governance_leadership": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8.0
+        },
+        "project_product": {
+          "precision": 0.1111111111111111,
+          "recall": 0.009708737864077669,
+          "f1-score": 0.017857142857142856,
+          "support": 103.0
+        },
+        "sales_account": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "sysadmin_devops_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 182.0
+        },
+        "tech_support_helpdesk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 94.0
+        },
+        "technical_specialized": {
+          "precision": 0.22048846675712347,
+          "recall": 0.9969325153374233,
+          "f1-score": 0.3611111111111111,
+          "support": 326.0
+        },
+        "web_frontend": {
+          "precision": 0.5,
+          "recall": 0.01015228426395939,
+          "f1-score": 0.01990049751243781,
+          "support": 197.0
+        },
+        "accuracy": 0.21991978609625668,
+        "macro avg": {
+          "precision": 0.1062888419853594,
+          "recall": 0.1147985533431568,
+          "f1-score": 0.0475393620807854,
+          "support": 1496.0
+        },
+        "weighted avg": {
+          "precision": 0.1266368212615419,
+          "recall": 0.21991978609625668,
+          "f1-score": 0.08372327666342726,
+          "support": 1496.0
+        }
+      },
+      "rows_total_in_csv": 1496,
+      "rows_dropped_unknown_label": 0,
+      "predictions_csv": "notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_base_eval_slice.csv"
+    }
+  },
+  "datasets": [
+    {
+      "dataset_id": "english_train",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_train.csv",
+      "confusion_matrix_error": "The number of FixedLocator locations (8), usually from a call to set_ticks, does not match the number of labels (9)."
+    },
+    {
+      "dataset_id": "english_val",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_val.csv",
+      "confusion_matrix_error": "The number of FixedLocator locations (8), usually from a call to set_ticks, does not match the number of labels (9)."
+    },
+    {
+      "dataset_id": "english_test",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_test.csv",
+      "confusion_matrix_error": "The number of FixedLocator locations (8), usually from a call to set_ticks, does not match the number of labels (9)."
+    },
+    {
+      "dataset_id": "english_soft_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_soft_eval_slice.csv",
+      "confusion_matrix_error": "The number of FixedLocator locations (8), usually from a call to set_ticks, does not match the number of labels (9)."
+    },
+    {
+      "dataset_id": "english_base_eval_slice",
+      "status": "ok",
+      "predictions_csv": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep/predictions_english_base_eval_slice.csv",
+      "confusion_matrix_error": "The number of FixedLocator locations (8), usually from a call to set_ticks, does not match the number of labels (9)."
+    }
+  ]
+}

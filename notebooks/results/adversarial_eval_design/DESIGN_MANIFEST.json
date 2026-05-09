@@ -1,0 +1,15 @@
+{
+  "notebook": "55_adversarial_eval_design.ipynb",
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/adversarial_eval_design",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/adversarial_eval_design",
+  "files_written": [
+    "adversarial_benchmark_spec.json",
+    "metrics_for_downstream.json",
+    "pair_registry_columns.csv",
+    "DESIGN_MANIFEST.json",
+    "PLANNED_OUTPUTS.json"
+  ],
+  "depends_on": [
+    "data/processed/english_dataset_v1/test.csv"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "model_run_id": "bert_9classes_final",
+  "pid": 10653,
+  "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/adversarial_model_eval/bert_9classes_final",
+  "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/adversarial_model_eval/bert_9classes_final",
+  "metrics_json": "notebooks/results/adversarial_model_eval/bert_9classes_final/metrics.json"
+}

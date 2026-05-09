@@ -1,8 +1,10 @@
 {
   "notebook_role": "canonical_english_benchmark_definition",
   "dataset_ready_for_next_step": true,
-  "recommended_next_move": "Consume splits and parquet from processed_dir; use base_eval_slice and city_swap counterfactuals from results_dir for English probes. Run heavy model comparisons in dedicated eval notebooks (not 32). See secondary_eval_slice_notebook.",
+  "recommended_next_move": "Consume splits and parquet from processed_dir; use base_eval_slice and city_swap counterfactuals for English probes. Run model evaluation in notebooks/english/ (not 32). Optional soft slice: secondary_eval_slice_notebook. Adversarial eval design: adversarial_benchmark_design_notebook.",
   "secondary_eval_slice_notebook": "notebooks/54_english_balanced_8class_eval.ipynb",
+  "adversarial_benchmark_design_notebook": "notebooks/55_adversarial_eval_design.ipynb",
+  "english_model_eval_notebook_folder": "notebooks/english/",
   "processed_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/data/processed/english_dataset_v1",
   "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_dataset_alignment",
   "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_dataset_alignment",

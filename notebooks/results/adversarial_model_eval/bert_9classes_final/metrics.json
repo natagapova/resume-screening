@@ -1,0 +1,74 @@
+{
+  "model_run_id": "bert_9classes_final",
+  "n_pairs_evaluated": 208,
+  "rows_dropped_unknown_label": 0,
+  "flip_rate": 0.02403846153846154,
+  "mean_delta_prob_true_class": 0.0001972593308892101,
+  "by_attribute_edited": [
+    {
+      "attribute_edited": "city_location",
+      "n_pairs": 208,
+      "flip_rate": 0.02403846153846154,
+      "mean_delta_prob_true": 0.0001972593308892101
+    }
+  ],
+  "by_true_class": [
+    {
+      "supercategory": "backend_general_dev",
+      "n_pairs": 67,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": 0.00046784657752141356
+    },
+    {
+      "supercategory": "generic_it_ops",
+      "n_pairs": 9,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": 0.00022144283866509795
+    },
+    {
+      "supercategory": "it_governance_leadership",
+      "n_pairs": 1,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": -0.0018674731254577637
+    },
+    {
+      "supercategory": "project_product",
+      "n_pairs": 17,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": 0.000829594093374908
+    },
+    {
+      "supercategory": "sysadmin_devops_network",
+      "n_pairs": 25,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": 0.00025810941588133574
+    },
+    {
+      "supercategory": "tech_support_helpdesk",
+      "n_pairs": 11,
+      "flip_rate": 0.09090909090909091,
+      "mean_delta_prob_true": 0.00018524547340348363
+    },
+    {
+      "supercategory": "technical_specialized",
+      "n_pairs": 46,
+      "flip_rate": 0.043478260869565216,
+      "mean_delta_prob_true": -0.0006002106820233166
+    },
+    {
+      "supercategory": "web_frontend",
+      "n_pairs": 32,
+      "flip_rate": 0.0625,
+      "mean_delta_prob_true": 0.00045546446926891804
+    }
+  ],
+  "pairs_csv": "notebooks/results/adversarial_resume_pairs/adversarial_resume_pairs.csv",
+  "predictions_csv": "notebooks/results/adversarial_model_eval/bert_9classes_final/predictions_adversarial_pairs.csv",
+  "resolved_model_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final",
+  "model_resolution_tried": [
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/english/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/models/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final"
+  ],
+  "device": "mps"
+}

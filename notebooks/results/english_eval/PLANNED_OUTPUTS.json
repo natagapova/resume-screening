@@ -1,0 +1,32 @@
+{
+  "description": "Static plan for English model evaluation outputs. Each model run writes ONLY under its own subdirectory (safe for parallel execution).",
+  "results_root": "notebooks/results/english_eval",
+  "figures_root": "figures/english_eval",
+  "per_model_subdir": "<model_run_id>",
+  "expected_files": [
+    "predictions_english_train.csv",
+    "predictions_english_val.csv",
+    "predictions_english_test.csv",
+    "predictions_english_soft_eval_slice.csv",
+    "predictions_english_base_eval_slice.csv",
+    "metrics.json",
+    "run_manifest.json"
+  ],
+  "expected_figures": [
+    "confusion_matrix_english_train.png",
+    "confusion_matrix_english_val.png",
+    "confusion_matrix_english_test.png",
+    "confusion_matrix_english_soft_eval_slice.png",
+    "confusion_matrix_english_base_eval_slice.png"
+  ],
+  "model_run_ids": [
+    "bert_9classes_final",
+    "bert_scrubbing",
+    "label_smoothing_eps01_2ep"
+  ],
+  "data_sources": {
+    "english_splits": "data/processed/english_dataset_v1/{train,val,test}.csv from notebook 32",
+    "soft_eval_slice": "notebooks/results/english_balanced_eval/english_balanced_8class_eval.csv from notebook 54",
+    "base_eval_slice": "notebooks/results/english_dataset_alignment/32_english_base_eval_slice.csv from notebook 32"
+  }
+}

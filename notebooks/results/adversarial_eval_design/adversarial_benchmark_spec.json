@@ -1,0 +1,42 @@
+{
+  "notebook": "55_adversarial_eval_design.ipynb",
+  "role": "adversarial_eval_benchmark_design",
+  "version": "v1_design_only",
+  "canonical_alignment_notebook": "notebooks/32_english_dataset_alignment.ipynb",
+  "source_split": {
+    "split_name": "test",
+    "csv_path_relative": "data/processed/english_dataset_v1/test.csv",
+    "text_col": "resume_text",
+    "label_col": "supercategory"
+  },
+  "scope": "evaluation_only_pairs_from_real_test_resumes",
+  "training_data_policy": "Do not add counterfactuals to training; inference-only evaluation.",
+  "sensitive_attributes_v1": [
+    "city_location",
+    "age_cue",
+    "gendered_cue",
+    "name_optional"
+  ],
+  "forbidden_edits_summary": [
+    "Change supercategory or training ontology inputs",
+    "Invent employers, degrees, or dates",
+    "Alter core skills/responsibilities to match stereotypes",
+    "Include train/val rows in v1 pair registry"
+  ],
+  "optional_reference_artifact": "notebooks/results/english_dataset_alignment/32_english_city_swap_counterfactuals.csv",
+  "pair_registry_columns": [
+    "pair_id",
+    "anchor_row_id",
+    "variant_id",
+    "split",
+    "supercategory",
+    "attribute_edited",
+    "transform_type",
+    "anchor_resume_text",
+    "counterfactual_resume_text",
+    "diff_summary",
+    "edit_rationale",
+    "validation_status",
+    "provenance_note"
+  ]
+}

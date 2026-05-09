@@ -1,0 +1,13 @@
+{
+  "description": "Static plan for adversarial design track outputs (55). No model checkpoints stored here.",
+  "results_root": "notebooks/results/adversarial_eval_design",
+  "figures_root": "figures/adversarial_eval_design",
+  "expected_after_run": [
+    "adversarial_benchmark_spec.json",
+    "metrics_for_downstream.json",
+    "pair_registry_columns.csv",
+    "DESIGN_MANIFEST.json",
+    "PLANNED_OUTPUTS.json"
+  ],
+  "optional_figure": "figures/adversarial_eval_design/55_adversarial_eval_flow.png"
+}
