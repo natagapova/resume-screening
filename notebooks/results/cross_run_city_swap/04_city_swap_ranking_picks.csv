@@ -1,0 +1,4 @@
+criterion,model_name,display_name,source_run,overall_flip_rate,swap_macro_f1,macro_f1,worst_gap,balance_robust_quality
+lowest_flip,bert_scrubbing,Data Scrubbing,70_batch,0.0,0.6106395818352593,0.6105665172611873,0.3,0.9582990929839278
+highest_swap_f1,label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,c10_challengers,0.0891107078039927,0.6229579754516105,0.6229579754516105,0.3176470588235294,0.615203761755424
+best_balance,bert_scrubbing,Data Scrubbing,70_batch,0.0,0.6106395818352593,0.6105665172611873,0.3,0.9582990929839278

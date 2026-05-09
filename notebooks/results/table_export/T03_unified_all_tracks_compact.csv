@@ -1,0 +1,40 @@
+display_name,model_name,track,family_group,method,accuracy,macro_f1,worst_gap,macro_gap,overall_flip_rate
+Baseline,bert_9classes_final,main,baseline,Baseline BERT + sqrt_rw,0.609,0.621,0.329,0.116,0.077
+GroupDRO η=0.1,bert_gdro_eta01_2ep,main,groupdro,"GroupDRO eta=0.1 + sqrt_rw, 2ep",0.548,0.553,0.265,0.113,0.116
+Focal Loss,bert_focal_loss,main,focal,Focal Loss gamma=2.0 + sqrt_rw,0.593,0.613,0.329,0.136,0.069
+focal_gamma1_2ep,focal_gamma1_2ep,challenger,focal,Focal Loss + sqrt_rw,0.604,0.619,0.324,0.134,
+focal_gamma3_2ep,focal_gamma3_2ep,challenger,focal,Focal Loss + sqrt_rw,0.6,0.617,0.347,0.143,
+focal_gamma20_3ep,focal_gamma20_3ep,challenger,focal,Focal Loss + sqrt_rw,0.606,0.615,0.3,0.146,
+focal_gamma2_2ep,focal_gamma2_2ep,challenger,focal,Focal Loss + sqrt_rw,0.596,0.614,0.371,0.134,
+focal_gamma10_3ep,focal_gamma10_3ep,challenger,focal,Focal Loss + sqrt_rw,0.605,0.613,0.365,0.128,
+focal_gamma15_3ep,focal_gamma15_3ep,challenger,focal,Focal Loss + sqrt_rw,0.606,0.613,0.312,0.139,
+Label Smoothing,bert_label_smoothing,main,label_smoothing,Label Smoothing ε=0.1 + sqrt_rw,0.596,0.608,0.329,0.14,0.107
+label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,challenger,label_smoothing,Label Smoothing + sqrt_rw,0.608,0.623,0.318,0.136,
+label_smoothing_eps005_2ep,label_smoothing_eps005_2ep,challenger,label_smoothing,Label Smoothing + sqrt_rw,0.605,0.62,0.324,0.128,
+label_smoothing_eps015_2ep,label_smoothing_eps015_2ep,challenger,label_smoothing,Label Smoothing + sqrt_rw,0.599,0.616,0.341,0.141,
+label_smoothing_eps01_3ep,label_smoothing_eps01_3ep,challenger,label_smoothing,Label Smoothing + sqrt_rw,0.606,0.615,0.341,0.119,
+label_smoothing_eps005_3ep,label_smoothing_eps005_3ep,challenger,label_smoothing,Label Smoothing + sqrt_rw,0.601,0.608,0.353,0.152,
+Adversarial Debiasing,bert_adversarial,main,adversarial,Adversarial Debiasing α=0.5 + sqrt_rw,0.574,0.594,0.429,0.132,
+Data Scrubbing,bert_scrubbing,main,scrubbing,Data Scrubbing + sqrt_rw,0.594,0.611,0.3,0.112,0.0
+Attribution Regularization,bert_attr_reg,main,attr_reg,Attribution Regularization (attention) λ=0.1 + sqrt_rw,0.583,0.601,0.335,0.116,
+Oversampling,bert_oversample_only,main,oversampling,oversampling + sqrt_reweight (NO GroupDRO),0.601,0.611,0.358,0.135,0.1
+Combined Best,combined_scrubbing_groupdro,main,combined,Combined Best,0.576,0.597,,,0.0
+Combined Scrub + GroupDRO,bert_debiased_combo,main,combined,sqrt_reweight + oversampling + GroupDRO,0.488,0.481,0.406,0.138,0.0
+weighted_sampler_citypow05_2ep,weighted_sampler_citypow05_2ep,challenger,weighted_sampler,Weighted Sampler (city_group) + Plain CE,0.592,0.602,0.353,0.148,
+weighted_sampler_citypow10_2ep,weighted_sampler_citypow10_2ep,challenger,weighted_sampler,Weighted Sampler (city_group) + Plain CE,0.578,0.583,0.329,0.131,
+weighted_sampler_citypow15_2ep,weighted_sampler_citypow15_2ep,challenger,weighted_sampler,Weighted Sampler (city_group) + Plain CE,0.561,0.561,0.288,0.107,
+rdrop_alpha20_2ep,rdrop_alpha20_2ep,challenger,rdrop,R-Drop + sqrt_rw,0.604,0.621,0.335,0.138,
+rdrop_alpha10_2ep,rdrop_alpha10_2ep,challenger,rdrop,R-Drop + sqrt_rw,0.607,0.62,0.312,0.127,
+rdrop_alpha05_2ep,rdrop_alpha05_2ep,challenger,rdrop,R-Drop + sqrt_rw,0.606,0.618,0.329,0.116,
+class_balanced_cbce_beta099_2ep,class_balanced_cbce_beta099_2ep,challenger,class_balanced,Class-Balanced CE + sqrt_rw,0.607,0.621,0.388,0.137,
+class_balanced_cbce_beta0999_2ep,class_balanced_cbce_beta0999_2ep,challenger,class_balanced,Class-Balanced CE + sqrt_rw,0.601,0.615,0.335,0.136,
+class_balanced_cbfocal_beta0999_gamma20_2ep,class_balanced_cbfocal_beta0999_gamma20_2ep,challenger,class_balanced,Class-Balanced Focal + sqrt_rw,0.603,0.612,0.365,0.139,
+logit_adjustment_tau05_2ep,logit_adjustment_tau05_2ep,challenger,logit_adjustment,Logit Adjustment + sqrt_rw,0.599,0.617,0.371,0.126,
+logit_adjustment_tau10_2ep,logit_adjustment_tau10_2ep,challenger,logit_adjustment,Logit Adjustment + sqrt_rw,0.595,0.61,0.359,0.142,
+logit_adjustment_tau15_2ep,logit_adjustment_tau15_2ep,challenger,logit_adjustment,Logit Adjustment + sqrt_rw,0.57,0.596,0.353,0.121,
+ls_gdro_eps005_eta005_3ep,ls_gdro_eps005_eta005_3ep,challenger,other,Label Smoothing + GroupDRO + sqrt_rw,0.588,0.6,0.335,0.132,
+ls_gdro_eps01_eta005_3ep,ls_gdro_eps01_eta005_3ep,challenger,other,Label Smoothing + GroupDRO + sqrt_rw,0.586,0.594,0.335,0.127,
+bert_gdro_eta005_2ep,bert_gdro_eta005_2ep,challenger,other,GroupDRO + sqrt_rw,0.575,0.59,0.288,0.122,
+ls_gdro_eps01_eta01_3ep,ls_gdro_eps01_eta01_3ep,challenger,other,Label Smoothing + GroupDRO + sqrt_rw,0.574,0.587,0.312,0.119,
+bert_gdro_eta01_2ep,bert_gdro_eta01_2ep,challenger,other,GroupDRO + sqrt_rw,0.546,0.562,0.276,0.131,
+bert_gdro_eta02_2ep,bert_gdro_eta02_2ep,challenger,other,GroupDRO + sqrt_rw,0.521,0.533,0.347,0.125,

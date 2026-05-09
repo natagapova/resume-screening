@@ -1,0 +1,44 @@
+{
+  "repo_root": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository",
+  "legacy_figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures",
+  "paper_figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/paper_figures",
+  "paper_results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/paper_figures",
+  "legacy_pdfs": [
+    "accuracy_comparison.pdf",
+    "fairness_comparison.pdf",
+    "improvement_bars.pdf",
+    "tradeoff_scatter.pdf"
+  ],
+  "paper_figures": [
+    "paper_accuracy_comparison.pdf",
+    "paper_accuracy_comparison.png",
+    "paper_audit_supercategory_train_counts.pdf",
+    "paper_audit_supercategory_train_counts.png",
+    "paper_city_swap_flip_vs_swap_f1.pdf",
+    "paper_city_swap_flip_vs_swap_f1.png",
+    "paper_fairness_comparison.pdf",
+    "paper_fairness_comparison.png",
+    "paper_fairness_gap_vs_city_flip.pdf",
+    "paper_fairness_gap_vs_city_flip.png",
+    "paper_ig_city_attr_mass_by_model.pdf",
+    "paper_ig_city_attr_mass_by_model.png",
+    "paper_improvement_bars.pdf",
+    "paper_improvement_bars.png",
+    "paper_tradeoff_scatter.pdf",
+    "paper_tradeoff_scatter.png",
+    "paper_twopanel_unified_and_city_swap.pdf",
+    "paper_twopanel_unified_and_city_swap.png",
+    "paper_unified_macro_f1_vs_worst_gap.pdf",
+    "paper_unified_macro_f1_vs_worst_gap.png"
+  ],
+  "paper_tables": [
+    "01_main_track_metrics_table.tex",
+    "02_main_track_metrics_from_configs.csv",
+    "03_audit_train_supercategory_counts.csv",
+    "04_fairness_flip_slice.csv",
+    "05_unified_metrics_plotted_slice.csv",
+    "06_city_swap_ok_slice.csv",
+    "07_ig_city_attr_mass.csv",
+    "manifest.json"
+  ]
+}

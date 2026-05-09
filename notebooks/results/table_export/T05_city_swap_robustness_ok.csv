@@ -1,0 +1,16 @@
+display_name,model_name,source_run,track,accuracy,macro_f1,swap_macro_f1,overall_flip_rate,worst_gap,macro_gap,rank_flip_then_swap_f1,rank_fairest_gap_then_f1,balance_robust_quality,delta_swap_f1_minus_standard
+Data Scrubbing,bert_scrubbing,70_batch,main,0.594,0.611,0.611,0.0,0.3,0.112,1.0,3.0,0.958,0.0
+Combined Best,combined_scrubbing_groupdro,70_batch,main,0.576,0.597,0.597,0.0,,,2.0,,0.913,0.0
+Combined Scrub + GroupDRO,bert_debiased_combo,70_batch,main,0.488,0.481,0.475,0.0,0.406,0.138,3.0,12.0,0.5,-0.006
+class_balanced_cbce_beta099_2ep,class_balanced_cbce_beta099_2ep,c10_challengers,challenger,0.607,0.621,0.621,0.058,0.388,0.137,4.0,11.0,0.743,0.0
+rdrop_alpha10_2ep,rdrop_alpha10_2ep,c10_challengers,challenger,0.607,0.62,0.62,0.062,0.312,0.127,6.0,4.0,0.722,0.0
+restored_adversarial,restored_adversarial,72_restored,,,,0.594,0.062,,,5.0,,0.636,
+restored_attr_reg,restored_attr_reg,72_restored,,,,0.601,0.063,,,7.0,,0.653,
+Focal Loss,bert_focal_loss,70_batch,main,0.593,0.613,0.613,0.069,0.329,0.136,8.0,8.0,0.67,0.0
+Baseline,bert_9classes_final,70_batch,main,0.609,0.621,0.621,0.077,0.329,0.116,9.0,7.0,0.659,-0.0
+focal_gamma1_2ep,focal_gamma1_2ep,c10_challengers,challenger,0.604,0.619,0.619,0.087,0.324,0.134,10.0,6.0,0.612,0.0
+bert_gdro_eta005_2ep,bert_gdro_eta005_2ep,c10_challengers,challenger,0.575,0.59,0.59,0.087,0.288,0.122,11.0,2.0,0.511,0.0
+label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,c10_challengers,challenger,0.608,0.623,0.623,0.089,0.318,0.136,12.0,5.0,0.615,0.0
+Oversampling,bert_oversample_only,70_batch,main,0.601,0.611,0.611,0.1,0.358,0.135,13.0,10.0,0.528,0.0
+Label Smoothing,bert_label_smoothing,70_batch,main,0.596,0.608,0.608,0.107,0.329,0.14,14.0,9.0,0.486,0.0
+GroupDRO η=0.1,bert_gdro_eta01_2ep,70_batch,main,0.548,0.553,0.553,0.116,0.265,0.113,15.0,1.0,0.262,0.0

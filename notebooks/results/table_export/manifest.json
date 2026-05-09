@@ -1,0 +1,80 @@
+{
+  "repo_root": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository",
+  "output_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/table_export",
+  "sources": {
+    "unified_full": "notebooks/results/unified_comparison/01_unified_models_full_table.csv",
+    "unified_main": "notebooks/results/unified_comparison/02_main_track_models.csv",
+    "unified_challenger": "notebooks/results/unified_comparison/03_challenger_track_models.csv",
+    "fairness_main": "notebooks/results/fairness_error_analysis/01_main_model_fairness_metrics.csv",
+    "city_swap_master": "notebooks/results/cross_run_city_swap/01_cross_run_city_swap_master.csv",
+    "audit_split_sizes": "notebooks/results/dataset_audit/02_split_sizes.csv",
+    "audit_city_groups": "notebooks/results/dataset_audit/05_top_city_groups.csv",
+    "audit_supercategory": "notebooks/results/dataset_audit/03_supercategory_counts_by_split.csv",
+    "ig_city_attr": "notebooks/results/integrated_gradients_extended/07_city_attr_mass_ratio_by_model.csv"
+  },
+  "exports": [
+    {
+      "stem": "T01_main_track_unified",
+      "csv": "T01_main_track_unified.csv",
+      "tex": "T01_main_track_unified.tex"
+    },
+    {
+      "stem": "T02_challenger_track_unified",
+      "csv": "T02_challenger_track_unified.csv",
+      "tex": "T02_challenger_track_unified.tex"
+    },
+    {
+      "stem": "T03_unified_all_tracks_compact",
+      "csv": "T03_unified_all_tracks_compact.csv",
+      "tex": "T03_unified_all_tracks_compact.tex"
+    },
+    {
+      "stem": "T04_fairness_main_models",
+      "csv": "T04_fairness_main_models.csv",
+      "tex": "T04_fairness_main_models.tex"
+    },
+    {
+      "stem": "T05_city_swap_robustness_ok",
+      "csv": "T05_city_swap_robustness_ok.csv",
+      "tex": "T05_city_swap_robustness_ok.tex"
+    },
+    {
+      "stem": "T05b_city_swap_leaderboard",
+      "csv": "T05b_city_swap_leaderboard.csv",
+      "tex": null
+    },
+    {
+      "stem": "T05c_city_swap_failed_rows",
+      "csv": "T05c_city_swap_failed_rows.csv",
+      "tex": null
+    },
+    {
+      "stem": "T06_dataset_split_sizes",
+      "csv": "T06_dataset_split_sizes.csv",
+      "tex": "T06_dataset_split_sizes.tex"
+    },
+    {
+      "stem": "T07_dataset_top_city_groups",
+      "csv": "T07_dataset_top_city_groups.csv",
+      "tex": "T07_dataset_top_city_groups.tex"
+    },
+    {
+      "stem": "T08_dataset_train_supercategory_counts",
+      "csv": "T08_dataset_train_supercategory_counts.csv",
+      "tex": "T08_dataset_train_supercategory_counts.tex"
+    },
+    {
+      "stem": "T09_ig_city_attr_mass_by_model",
+      "csv": "T09_ig_city_attr_mass_by_model.csv",
+      "tex": "T09_ig_city_attr_mass_by_model.tex"
+    },
+    {
+      "stem": "T10_main_track_merged_standard_fairness_cityswap",
+      "csv": "T10_main_track_merged_standard_fairness_cityswap.csv",
+      "tex": "T10_main_track_merged_standard_fairness_cityswap.tex"
+    }
+  ],
+  "figures": [
+    "preview_T01_main_track.png"
+  ]
+}

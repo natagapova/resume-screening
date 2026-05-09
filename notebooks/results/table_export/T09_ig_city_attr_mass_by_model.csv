@@ -1,0 +1,8 @@
+model,mean,median,max
+baseline,0.0031,0.0,0.0425
+debiased,0.0018,0.0,0.0239
+focal,0.0029,0.0,0.0334
+gdro,0.0073,0.0,0.1249
+label_smooth,0.0029,0.0,0.0302
+oversample,0.0043,0.0,0.0494
+scrubbing,0.004,0.0,0.0599

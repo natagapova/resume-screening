@@ -1,0 +1,3 @@
+model_name,source_run,status,error
+6_adversarial,70_batch,error,failed to load
+8_attribution_reg,70_batch,error,failed to load

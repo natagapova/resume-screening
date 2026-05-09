@@ -1,0 +1,18 @@
+{
+  "main_swap_json": "notebooks/results/city_swap_all/city_swap_all_models.json",
+  "unified_table": "notebooks/results/unified_comparison/01_unified_models_full_table.csv",
+  "c10_summary": "notebooks/results/challengers_city_swap/c10_selected_family_city_swap_summary.csv",
+  "r72_summary": "notebooks/results/two-models-restore/city_swap_restored_models/72_restored_models_city_swap_summary.csv",
+  "n_rows_after_loose_merge": "17",
+  "outputs": [
+    "01_cross_run_city_swap_master.csv",
+    "02_cross_run_city_swap_by_source.csv",
+    "03_cross_run_city_swap_family_summary.csv",
+    "04_city_swap_ranking_picks.csv",
+    "05_rank_disagreement_flip_vs_gap.csv",
+    "06_cross_run_city_swap_report.txt",
+    "07_cross_run_city_swap_summary.json",
+    "08_city_swap_leaderboard_compact.csv",
+    "manifest.json"
+  ]
+}
