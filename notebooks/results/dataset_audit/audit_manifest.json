@@ -1,0 +1,23 @@
+{
+  "repo_root": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository",
+  "n_total": 27550,
+  "splits": {
+    "train": 16530,
+    "val": 5510,
+    "test": 5510
+  },
+  "n_supercategories": 9,
+  "n_fine_labels": 125,
+  "imbalance_supercat_max_over_min": 5.49203187250996,
+  "duplicate_row_frac": 0.0003629764065335753,
+  "unknown_age_frac": 0.40758620689655173,
+  "moscow_frac": 0.33876588021778586,
+  "frac_label_substring_in_text": 0.6813430127041742,
+  "frac_city_name_in_text_non_other": 0.8312024066936167,
+  "cramers_v": {
+    "city_group_top12": 0.0608,
+    "gender": 0.2944,
+    "age_group_top6": 0.0796
+  },
+  "chi2_supercat_x_collapsed_city_p_value": 1.039117030830353e-132
+}

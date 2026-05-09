@@ -1,0 +1,5 @@
+metric,value
+n_rows,27550.0
+unique_normalized_text,27545.0
+rows_in_duplicate_groups,10.0
+frac_rows_in_duplicate_groups,0.0003629764065335753

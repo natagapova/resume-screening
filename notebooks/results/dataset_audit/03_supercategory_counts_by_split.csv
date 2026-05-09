@@ -1,0 +1,4 @@
+split,backend_general_dev,generic_it_ops,it_governance_leadership,project_product,sales_account,sysadmin_devops_network,tech_support_helpdesk,technical_specialized,web_frontend
+test,517,971,709,668,344,1102,338,659,202
+train,1546,2913,2129,2006,1029,3308,1016,1982,601
+val,513,972,711,668,342,1104,337,662,201

@@ -1,0 +1,7 @@
+column,dtype,null_count,null_frac
+resume_text,str,0,0.0
+label,str,0,0.0
+city_group,str,0,0.0
+gender,str,0,0.0
+age_group,str,0,0.0
+supercategory,str,0,0.0
