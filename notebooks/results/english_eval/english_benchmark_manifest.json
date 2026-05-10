@@ -1,0 +1,10 @@
+{
+  "notebook": "english_benchmark_aggregate.ipynb",
+  "output_csv": "notebooks/results/english_eval/english_benchmark_summary.csv",
+  "n_runs": 4,
+  "eval_bundle_counts": {
+    "english_eval": 3,
+    "english_transfer_eval": 1
+  },
+  "unified_joined": true
+}

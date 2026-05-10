@@ -10,7 +10,8 @@
     "audit_split_sizes": "notebooks/results/dataset_audit/02_split_sizes.csv",
     "audit_city_groups": "notebooks/results/dataset_audit/05_top_city_groups.csv",
     "audit_supercategory": "notebooks/results/dataset_audit/03_supercategory_counts_by_split.csv",
-    "ig_city_attr": "notebooks/results/integrated_gradients_extended/07_city_attr_mass_ratio_by_model.csv"
+    "ig_city_attr": "notebooks/results/integrated_gradients_extended/07_city_attr_mass_ratio_by_model.csv",
+    "english_benchmark_summary": "notebooks/results/english_eval/english_benchmark_summary.csv"
   },
   "exports": [
     {
@@ -87,6 +88,11 @@
       "stem": "T14_main_track_merged_benchmark_bundle",
       "csv": "T14_main_track_merged_benchmark_bundle.csv",
       "tex": "T14_main_track_merged_benchmark_bundle.tex"
+    },
+    {
+      "stem": "T15_english_benchmark_wide",
+      "csv": "T15_english_benchmark_wide.csv",
+      "tex": "T15_english_benchmark_wide.tex"
     }
   ],
   "figures": [

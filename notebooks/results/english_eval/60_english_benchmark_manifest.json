@@ -1,0 +1,9 @@
+{
+  "deprecated": true,
+  "use_instead": {
+    "notebook": "notebooks/english/english_benchmark_aggregate.ipynb",
+    "manifest": "notebooks/results/english_eval/english_benchmark_manifest.json",
+    "summary_csv": "notebooks/results/english_eval/english_benchmark_summary.csv"
+  },
+  "note": "This file name is legacy. Root notebooks/60_label_smoothing.ipynb is unrelated; the English aggregate is english_benchmark_aggregate.ipynb under notebooks/english/."
+}
