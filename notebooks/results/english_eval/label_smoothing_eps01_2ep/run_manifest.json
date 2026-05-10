@@ -12,7 +12,7 @@
   "seed": 42,
   "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/label_smoothing_eps01_2ep",
   "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_eval/label_smoothing_eps01_2ep",
-  "pid": 9628,
+  "pid": 19305,
   "english_pipeline_note": "Data from 32 (alignment) / 54 (soft slice); see canonical manifest in english_dataset_alignment.",
   "metrics_json": "notebooks/results/english_eval/label_smoothing_eps01_2ep/metrics.json",
   "completed_datasets": [

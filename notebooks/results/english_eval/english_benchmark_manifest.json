@@ -1,5 +1,5 @@
 {
-  "notebook": "english_benchmark_aggregate.ipynb",
+  "notebook": "e04_english_benchmark_aggregate.ipynb",
   "output_csv": "notebooks/results/english_eval/english_benchmark_summary.csv",
   "n_runs": 4,
   "eval_bundle_counts": {

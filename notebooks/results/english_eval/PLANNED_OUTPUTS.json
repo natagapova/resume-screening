@@ -19,7 +19,7 @@
     "confusion_matrix_english_soft_eval_slice.png",
     "confusion_matrix_english_base_eval_slice.png"
   ],
-  "aggregate_notebook": "notebooks/english/english_benchmark_aggregate.ipynb",
+  "aggregate_notebook": "notebooks/english/e04_english_benchmark_aggregate.ipynb",
   "aggregate_outputs": [
     "notebooks/results/english_eval/english_benchmark_summary.csv",
     "notebooks/results/english_eval/english_benchmark_manifest.json"

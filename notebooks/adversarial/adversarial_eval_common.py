@@ -1,7 +1,7 @@
 """
 Shared helpers for adversarial pair evaluation (notebook 58).
 
-Imports model utilities from notebooks/english/english_eval_common.py.
+Imports model utilities from notebooks/english/e07_english_eval_common.py.
 Each model run writes only under:
   notebooks/results/adversarial_model_eval/<model_run_id>/
   figures/adversarial_model_eval/<model_run_id>/
@@ -19,14 +19,14 @@ import numpy as np
 import pandas as pd
 import torch
 
-# english_eval_common lives in notebooks/english/
+# e07_english_eval_common lives in notebooks/english/
 import sys
 
 _EN = Path(__file__).resolve().parent.parent / "english"
 if str(_EN) not in sys.path:
     sys.path.insert(0, str(_EN))
 
-from english_eval_common import (  # noqa: E402
+from e07_english_eval_common import (  # noqa: E402
     MODEL_CHECKPOINT_CANDIDATES,
     filter_to_encoder_labels,
     load_model_bundle,

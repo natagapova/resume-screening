@@ -1,0 +1,100 @@
+{
+  "eval_kind": "english_city_swap",
+  "design_note": "Pairs from 32_english_city_swap_counterfactuals.csv (notebook 32); eval-only stress test on English text.",
+  "model_run_id": "bert_9classes_final",
+  "n_pairs_evaluated": 6792,
+  "rows_dropped_unknown_label": 0,
+  "flip_rate": 0.03136042402826855,
+  "mean_delta_prob_true_class": 5.2644800234702416e-06,
+  "by_swap_city": [
+    {
+      "swap_city": "berlin",
+      "n_pairs": 1489,
+      "flip_rate": 0.03626595030221625,
+      "mean_delta_prob_true": 0.00016819860320538282
+    },
+    {
+      "swap_city": "london",
+      "n_pairs": 1453,
+      "flip_rate": 0.034411562284927734,
+      "mean_delta_prob_true": 0.0003630378923844546
+    },
+    {
+      "swap_city": "new york",
+      "n_pairs": 1303,
+      "flip_rate": 0.023023791250959325,
+      "mean_delta_prob_true": -2.6363941287854686e-06
+    },
+    {
+      "swap_city": "san francisco",
+      "n_pairs": 1055,
+      "flip_rate": 0.024644549763033177,
+      "mean_delta_prob_true": 7.316313713090494e-05
+    },
+    {
+      "swap_city": "singapore",
+      "n_pairs": 1492,
+      "flip_rate": 0.035522788203753354,
+      "mean_delta_prob_true": -0.0005468749441206455
+    }
+  ],
+  "by_true_class": [
+    {
+      "supercategory": "backend_general_dev",
+      "n_pairs": 2379,
+      "flip_rate": 0.02395964691046658,
+      "mean_delta_prob_true": -3.3884858567034826e-05
+    },
+    {
+      "supercategory": "generic_it_ops",
+      "n_pairs": 277,
+      "flip_rate": 0.02527075812274368,
+      "mean_delta_prob_true": 3.19513856084086e-05
+    },
+    {
+      "supercategory": "it_governance_leadership",
+      "n_pairs": 40,
+      "flip_rate": 0.0,
+      "mean_delta_prob_true": -0.0001743645843816921
+    },
+    {
+      "supercategory": "project_product",
+      "n_pairs": 463,
+      "flip_rate": 0.06479481641468683,
+      "mean_delta_prob_true": -0.00027474964736029506
+    },
+    {
+      "supercategory": "sysadmin_devops_network",
+      "n_pairs": 835,
+      "flip_rate": 0.022754491017964073,
+      "mean_delta_prob_true": 3.78132208425086e-05
+    },
+    {
+      "supercategory": "tech_support_helpdesk",
+      "n_pairs": 429,
+      "flip_rate": 0.018648018648018648,
+      "mean_delta_prob_true": -2.9284092306625098e-05
+    },
+    {
+      "supercategory": "technical_specialized",
+      "n_pairs": 1488,
+      "flip_rate": 0.038978494623655914,
+      "mean_delta_prob_true": 0.00025583323440514505
+    },
+    {
+      "supercategory": "web_frontend",
+      "n_pairs": 881,
+      "flip_rate": 0.03859250851305335,
+      "mean_delta_prob_true": -0.00017932972696144134
+    }
+  ],
+  "pairs_csv": "notebooks/results/english_dataset_alignment/32_english_city_swap_counterfactuals.csv",
+  "predictions_csv": "notebooks/results/english_city_swap_eval/bert_9classes_final/predictions_english_city_swap_pairs.csv",
+  "resolved_model_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final",
+  "model_resolution_tried": [
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/english/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/models/bert_9classes_final",
+    "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/models/bert_9classes_final"
+  ],
+  "device": "mps"
+}

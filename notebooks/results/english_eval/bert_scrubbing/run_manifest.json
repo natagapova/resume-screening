@@ -13,7 +13,7 @@
   "seed": 42,
   "results_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/notebooks/results/english_eval/bert_scrubbing",
   "figures_dir": "/Users/natashaagapova/Documents/A-INNOPOLIS/A-THESIS/my-repository/figures/english_eval/bert_scrubbing",
-  "pid": 9612,
+  "pid": 19301,
   "english_pipeline_note": "Data from 32 (alignment) / 54 (soft slice); see canonical manifest in english_dataset_alignment.",
   "metrics_json": "notebooks/results/english_eval/bert_scrubbing/metrics.json",
   "completed_datasets": [

@@ -1,5 +1,5 @@
 """
-Shared English evaluation helpers for notebooks under notebooks/english/.
+Shared English evaluation helpers for notebooks under notebooks/english/ (see e00_english_eval_overview.ipynb).
 
 Designed for parallel runs: each model uses a dedicated subdirectory under
 notebooks/results/english_eval/<model_run_id>/ and figures/english_eval/<model_run_id>/.
@@ -42,7 +42,7 @@ def resolve_repo_root() -> Path:
     for root in candidates:
         if (root / "data" / "processed").is_dir() and (root / "notebooks").is_dir():
             return root
-    return cwd.parent if (cwd / "english_eval_common.py").exists() else cwd
+    return cwd.parent if (cwd / "e07_english_eval_common.py").exists() else cwd
 
 
 def english_notebook_dir() -> Path:

@@ -18,6 +18,14 @@ notebooks/notebooks/
 notebooks/00_eda.ipynb
 output/combined_scrubbing_groupdro/
 archive/
+# City-swap pair predictions are huge (>100MB); reproduce via e05 notebook
+**/predictions_english_city_swap_pairs.csv
 notebooks/results/two-models-restore/restored_models/adversarial/
 notebooks/results/two-models-restore/restored_models/attr_reg/
-notebooks/english/__pycache__/
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+# latex
+icml2026/
+.vscode/
