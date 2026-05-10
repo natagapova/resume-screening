@@ -5,83 +5,87 @@ challenger rows: 29
 
 --- Ranking picks (04_ranking_picks_by_scope.csv) ---
 Scope: all_models
-  best_macro_f1: label_smoothing_eps01_2ep (label_smoothing_eps01_2ep) | f1=0.623 worst_gap=0.318 flip=-
-  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
-  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 flip=0.116
-  fairest_macro_robust_gap: weighted_sampler_citypow15_2ep (weighted_sampler_citypow15_2ep) | f1=0.561 worst_gap=0.288 flip=-
-  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
+  best_macro_f1: label_smoothing_eps01_2ep (label_smoothing_eps01_2ep) | f1=0.623 worst_gap=0.318 city_flip=- adv_pair_flip=- en_transfer_f1=-
+  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
+  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 city_flip=0.116 adv_pair_flip=- en_transfer_f1=-
+  fairest_macro_robust_gap: weighted_sampler_citypow15_2ep (weighted_sampler_citypow15_2ep) | f1=0.561 worst_gap=0.288 city_flip=- adv_pair_flip=- en_transfer_f1=-
+  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 city_flip=0.000 adv_pair_flip=- en_transfer_f1=-
+  most_robust_adversarial_pair_flip: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
+  best_english_transfer_test_macro_f1: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
 
 Scope: main_track_only
-  best_macro_f1: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
-  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 flip=0.077
-  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 flip=0.116
-  fairest_macro_robust_gap: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
-  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 flip=0.000
+  best_macro_f1: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
+  best_accuracy: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
+  fairest_worst_robust_gap: GroupDRO η=0.1 (bert_gdro_eta01_2ep) | f1=0.553 worst_gap=0.265 city_flip=0.116 adv_pair_flip=- en_transfer_f1=-
+  fairest_macro_robust_gap: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 city_flip=0.000 adv_pair_flip=- en_transfer_f1=-
+  most_robust_city_swap_flip: Data Scrubbing (bert_scrubbing) | f1=0.611 worst_gap=0.300 city_flip=0.000 adv_pair_flip=- en_transfer_f1=-
+  most_robust_adversarial_pair_flip: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
+  best_english_transfer_test_macro_f1: Baseline (bert_9classes_final) | f1=0.621 worst_gap=0.329 city_flip=0.077 adv_pair_flip=0.024 en_transfer_f1=0.056
 
 --- Family blocks (one line per model) ---
   family=adversarial
-    [main] bert_adversarial | acc=0.574 | f1=0.594 | worst=0.429 | macro=0.132 | flip=-
+    [main] bert_adversarial | acc=0.574 | f1=0.594 | worst=0.429 | macro=0.132 | city_flip=- | adv_flip=- | en_F1=-
 
   family=attr_reg
-    [main] bert_attr_reg | acc=0.583 | f1=0.601 | worst=0.335 | macro=0.116 | flip=-
+    [main] bert_attr_reg | acc=0.583 | f1=0.601 | worst=0.335 | macro=0.116 | city_flip=- | adv_flip=- | en_F1=-
 
   family=baseline
-    [main] bert_9classes_final | acc=0.609 | f1=0.621 | worst=0.329 | macro=0.116 | flip=0.077
+    [main] bert_9classes_final | acc=0.609 | f1=0.621 | worst=0.329 | macro=0.116 | city_flip=0.077 | adv_flip=0.024 | en_F1=0.056
 
   family=class_balanced
-    [challenger] class_balanced_cbce_beta099_2ep | acc=0.607 | f1=0.621 | worst=0.388 | macro=0.137 | flip=-
-    [challenger] class_balanced_cbce_beta0999_2ep | acc=0.601 | f1=0.615 | worst=0.335 | macro=0.136 | flip=-
-    [challenger] class_balanced_cbfocal_beta0999_gamma20_2ep | acc=0.603 | f1=0.612 | worst=0.365 | macro=0.139 | flip=-
+    [challenger] class_balanced_cbce_beta099_2ep | acc=0.607 | f1=0.621 | worst=0.388 | macro=0.137 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] class_balanced_cbce_beta0999_2ep | acc=0.601 | f1=0.615 | worst=0.335 | macro=0.136 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] class_balanced_cbfocal_beta0999_gamma20_2ep | acc=0.603 | f1=0.612 | worst=0.365 | macro=0.139 | city_flip=- | adv_flip=- | en_F1=-
 
   family=combined
-    [main] combined_scrubbing_groupdro | acc=0.576 | f1=0.597 | worst=- | macro=- | flip=0.000
-    [main] bert_debiased_combo | acc=0.488 | f1=0.481 | worst=0.406 | macro=0.138 | flip=0.000
+    [main] combined_scrubbing_groupdro | acc=0.576 | f1=0.597 | worst=- | macro=- | city_flip=0.000 | adv_flip=- | en_F1=-
+    [main] bert_debiased_combo | acc=0.488 | f1=0.481 | worst=0.406 | macro=0.138 | city_flip=0.000 | adv_flip=- | en_F1=-
 
   family=focal
-    [main] bert_focal_loss | acc=0.593 | f1=0.613 | worst=0.329 | macro=0.136 | flip=0.069
-    [challenger] focal_gamma1_2ep | acc=0.604 | f1=0.619 | worst=0.324 | macro=0.134 | flip=-
-    [challenger] focal_gamma3_2ep | acc=0.600 | f1=0.617 | worst=0.347 | macro=0.143 | flip=-
-    [challenger] focal_gamma20_3ep | acc=0.606 | f1=0.615 | worst=0.300 | macro=0.146 | flip=-
-    [challenger] focal_gamma2_2ep | acc=0.596 | f1=0.614 | worst=0.371 | macro=0.134 | flip=-
-    [challenger] focal_gamma10_3ep | acc=0.605 | f1=0.613 | worst=0.365 | macro=0.128 | flip=-
-    [challenger] focal_gamma15_3ep | acc=0.606 | f1=0.613 | worst=0.312 | macro=0.139 | flip=-
+    [main] bert_focal_loss | acc=0.593 | f1=0.613 | worst=0.329 | macro=0.136 | city_flip=0.069 | adv_flip=- | en_F1=-
+    [challenger] focal_gamma1_2ep | acc=0.604 | f1=0.619 | worst=0.324 | macro=0.134 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] focal_gamma3_2ep | acc=0.600 | f1=0.617 | worst=0.347 | macro=0.143 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] focal_gamma20_3ep | acc=0.606 | f1=0.615 | worst=0.300 | macro=0.146 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] focal_gamma2_2ep | acc=0.596 | f1=0.614 | worst=0.371 | macro=0.134 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] focal_gamma10_3ep | acc=0.605 | f1=0.613 | worst=0.365 | macro=0.128 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] focal_gamma15_3ep | acc=0.606 | f1=0.613 | worst=0.312 | macro=0.139 | city_flip=- | adv_flip=- | en_F1=-
 
   family=groupdro
-    [main] bert_gdro_eta01_2ep | acc=0.548 | f1=0.553 | worst=0.265 | macro=0.113 | flip=0.116
+    [main] bert_gdro_eta01_2ep | acc=0.548 | f1=0.553 | worst=0.265 | macro=0.113 | city_flip=0.116 | adv_flip=- | en_F1=-
 
   family=label_smoothing
-    [main] bert_label_smoothing | acc=0.596 | f1=0.608 | worst=0.329 | macro=0.140 | flip=0.107
-    [challenger] label_smoothing_eps01_2ep | acc=0.608 | f1=0.623 | worst=0.318 | macro=0.136 | flip=-
-    [challenger] label_smoothing_eps005_2ep | acc=0.605 | f1=0.620 | worst=0.324 | macro=0.128 | flip=-
-    [challenger] label_smoothing_eps015_2ep | acc=0.599 | f1=0.616 | worst=0.341 | macro=0.141 | flip=-
-    [challenger] label_smoothing_eps01_3ep | acc=0.606 | f1=0.615 | worst=0.341 | macro=0.119 | flip=-
-    [challenger] label_smoothing_eps005_3ep | acc=0.601 | f1=0.608 | worst=0.353 | macro=0.152 | flip=-
+    [main] bert_label_smoothing | acc=0.596 | f1=0.608 | worst=0.329 | macro=0.140 | city_flip=0.107 | adv_flip=- | en_F1=-
+    [challenger] label_smoothing_eps01_2ep | acc=0.608 | f1=0.623 | worst=0.318 | macro=0.136 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] label_smoothing_eps005_2ep | acc=0.605 | f1=0.620 | worst=0.324 | macro=0.128 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] label_smoothing_eps015_2ep | acc=0.599 | f1=0.616 | worst=0.341 | macro=0.141 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] label_smoothing_eps01_3ep | acc=0.606 | f1=0.615 | worst=0.341 | macro=0.119 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] label_smoothing_eps005_3ep | acc=0.601 | f1=0.608 | worst=0.353 | macro=0.152 | city_flip=- | adv_flip=- | en_F1=-
 
   family=logit_adjustment
-    [challenger] logit_adjustment_tau05_2ep | acc=0.599 | f1=0.617 | worst=0.371 | macro=0.126 | flip=-
-    [challenger] logit_adjustment_tau10_2ep | acc=0.595 | f1=0.610 | worst=0.359 | macro=0.142 | flip=-
-    [challenger] logit_adjustment_tau15_2ep | acc=0.570 | f1=0.596 | worst=0.353 | macro=0.121 | flip=-
+    [challenger] logit_adjustment_tau05_2ep | acc=0.599 | f1=0.617 | worst=0.371 | macro=0.126 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] logit_adjustment_tau10_2ep | acc=0.595 | f1=0.610 | worst=0.359 | macro=0.142 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] logit_adjustment_tau15_2ep | acc=0.570 | f1=0.596 | worst=0.353 | macro=0.121 | city_flip=- | adv_flip=- | en_F1=-
 
   family=other
-    [challenger] ls_gdro_eps005_eta005_3ep | acc=0.588 | f1=0.600 | worst=0.335 | macro=0.132 | flip=-
-    [challenger] ls_gdro_eps01_eta005_3ep | acc=0.586 | f1=0.594 | worst=0.335 | macro=0.127 | flip=-
-    [challenger] bert_gdro_eta005_2ep | acc=0.575 | f1=0.590 | worst=0.288 | macro=0.122 | flip=-
-    [challenger] ls_gdro_eps01_eta01_3ep | acc=0.574 | f1=0.587 | worst=0.312 | macro=0.119 | flip=-
-    [challenger] bert_gdro_eta01_2ep | acc=0.546 | f1=0.562 | worst=0.276 | macro=0.131 | flip=-
-    [challenger] bert_gdro_eta02_2ep | acc=0.521 | f1=0.533 | worst=0.347 | macro=0.125 | flip=-
+    [challenger] ls_gdro_eps005_eta005_3ep | acc=0.588 | f1=0.600 | worst=0.335 | macro=0.132 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] ls_gdro_eps01_eta005_3ep | acc=0.586 | f1=0.594 | worst=0.335 | macro=0.127 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] bert_gdro_eta005_2ep | acc=0.575 | f1=0.590 | worst=0.288 | macro=0.122 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] ls_gdro_eps01_eta01_3ep | acc=0.574 | f1=0.587 | worst=0.312 | macro=0.119 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] bert_gdro_eta01_2ep | acc=0.546 | f1=0.562 | worst=0.276 | macro=0.131 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] bert_gdro_eta02_2ep | acc=0.521 | f1=0.533 | worst=0.347 | macro=0.125 | city_flip=- | adv_flip=- | en_F1=-
 
   family=oversampling
-    [main] bert_oversample_only | acc=0.601 | f1=0.611 | worst=0.358 | macro=0.135 | flip=0.100
+    [main] bert_oversample_only | acc=0.601 | f1=0.611 | worst=0.358 | macro=0.135 | city_flip=0.100 | adv_flip=- | en_F1=-
 
   family=rdrop
-    [challenger] rdrop_alpha20_2ep | acc=0.604 | f1=0.621 | worst=0.335 | macro=0.138 | flip=-
-    [challenger] rdrop_alpha10_2ep | acc=0.607 | f1=0.620 | worst=0.312 | macro=0.127 | flip=-
-    [challenger] rdrop_alpha05_2ep | acc=0.606 | f1=0.618 | worst=0.329 | macro=0.116 | flip=-
+    [challenger] rdrop_alpha20_2ep | acc=0.604 | f1=0.621 | worst=0.335 | macro=0.138 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] rdrop_alpha10_2ep | acc=0.607 | f1=0.620 | worst=0.312 | macro=0.127 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] rdrop_alpha05_2ep | acc=0.606 | f1=0.618 | worst=0.329 | macro=0.116 | city_flip=- | adv_flip=- | en_F1=-
 
   family=scrubbing
-    [main] bert_scrubbing | acc=0.594 | f1=0.611 | worst=0.300 | macro=0.112 | flip=0.000
+    [main] bert_scrubbing | acc=0.594 | f1=0.611 | worst=0.300 | macro=0.112 | city_flip=0.000 | adv_flip=- | en_F1=-
 
   family=weighted_sampler
-    [challenger] weighted_sampler_citypow05_2ep | acc=0.592 | f1=0.602 | worst=0.353 | macro=0.148 | flip=-
-    [challenger] weighted_sampler_citypow10_2ep | acc=0.578 | f1=0.583 | worst=0.329 | macro=0.131 | flip=-
-    [challenger] weighted_sampler_citypow15_2ep | acc=0.561 | f1=0.561 | worst=0.288 | macro=0.107 | flip=-
+    [challenger] weighted_sampler_citypow05_2ep | acc=0.592 | f1=0.602 | worst=0.353 | macro=0.148 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] weighted_sampler_citypow10_2ep | acc=0.578 | f1=0.583 | worst=0.329 | macro=0.131 | city_flip=- | adv_flip=- | en_F1=-
+    [challenger] weighted_sampler_citypow15_2ep | acc=0.561 | f1=0.561 | worst=0.288 | macro=0.107 | city_flip=- | adv_flip=- | en_F1=-

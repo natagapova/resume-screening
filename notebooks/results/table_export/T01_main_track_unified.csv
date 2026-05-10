@@ -1,11 +1,11 @@
-display_name,model_name,track,family_group,method,accuracy,macro_f1,worst_gap,macro_gap,overall_flip_rate
-Baseline,bert_9classes_final,main,baseline,Baseline BERT + sqrt_rw,0.609,0.621,0.329,0.116,0.077
-GroupDRO η=0.1,bert_gdro_eta01_2ep,main,groupdro,"GroupDRO eta=0.1 + sqrt_rw, 2ep",0.548,0.553,0.265,0.113,0.116
-Focal Loss,bert_focal_loss,main,focal,Focal Loss gamma=2.0 + sqrt_rw,0.593,0.613,0.329,0.136,0.069
-Label Smoothing,bert_label_smoothing,main,label_smoothing,Label Smoothing ε=0.1 + sqrt_rw,0.596,0.608,0.329,0.14,0.107
-Adversarial Debiasing,bert_adversarial,main,adversarial,Adversarial Debiasing α=0.5 + sqrt_rw,0.574,0.594,0.429,0.132,
-Data Scrubbing,bert_scrubbing,main,scrubbing,Data Scrubbing + sqrt_rw,0.594,0.611,0.3,0.112,0.0
-Attribution Regularization,bert_attr_reg,main,attr_reg,Attribution Regularization (attention) λ=0.1 + sqrt_rw,0.583,0.601,0.335,0.116,
-Oversampling,bert_oversample_only,main,oversampling,oversampling + sqrt_reweight (NO GroupDRO),0.601,0.611,0.358,0.135,0.1
-Combined Best,combined_scrubbing_groupdro,main,combined,Combined Best,0.576,0.597,,,0.0
-Combined Scrub + GroupDRO,bert_debiased_combo,main,combined,sqrt_reweight + oversampling + GroupDRO,0.488,0.481,0.406,0.138,0.0
+display_name,model_name,track,family_group,method,accuracy,macro_f1,worst_gap,macro_gap,overall_flip_rate,adversarial_pair_flip_rate,adversarial_mean_delta_prob_true_class,adversarial_n_pairs_evaluated,english_transfer_test_accuracy,english_transfer_test_macro_f1,english_transfer_base_eval_slice_accuracy,english_transfer_base_eval_slice_macro_f1
+Baseline,bert_9classes_final,main,baseline,Baseline BERT + sqrt_rw,0.609,0.621,0.329,0.116,0.077,0.024,0.0,208.0,0.116,0.056,0.142,0.064
+GroupDRO η=0.1,bert_gdro_eta01_2ep,main,groupdro,"GroupDRO eta=0.1 + sqrt_rw, 2ep",0.548,0.553,0.265,0.113,0.116,,,,,,,
+Focal Loss,bert_focal_loss,main,focal,Focal Loss gamma=2.0 + sqrt_rw,0.593,0.613,0.329,0.136,0.069,,,,,,,
+Label Smoothing,bert_label_smoothing,main,label_smoothing,Label Smoothing ε=0.1 + sqrt_rw,0.596,0.608,0.329,0.14,0.107,,,,,,,
+Adversarial Debiasing,bert_adversarial,main,adversarial,Adversarial Debiasing α=0.5 + sqrt_rw,0.574,0.594,0.429,0.132,,,,,,,,
+Data Scrubbing,bert_scrubbing,main,scrubbing,Data Scrubbing + sqrt_rw,0.594,0.611,0.3,0.112,0.0,,,,,,,
+Attribution Regularization,bert_attr_reg,main,attr_reg,Attribution Regularization (attention) λ=0.1 + sqrt_rw,0.583,0.601,0.335,0.116,,,,,,,,
+Oversampling,bert_oversample_only,main,oversampling,oversampling + sqrt_reweight (NO GroupDRO),0.601,0.611,0.358,0.135,0.1,,,,,,,
+Combined Best,combined_scrubbing_groupdro,main,combined,Combined Best,0.576,0.597,,,0.0,,,,,,,
+Combined Scrub + GroupDRO,bert_debiased_combo,main,combined,sqrt_reweight + oversampling + GroupDRO,0.488,0.481,0.406,0.138,0.0,,,,,,,

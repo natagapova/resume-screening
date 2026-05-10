@@ -1,17 +1,17 @@
-n_models,best_f1_model,best_f1_display,best_macro_f1,best_worstgap_model,best_worst_gap,best_flip_model,min_flip_rate,track,family_group
-3,class_balanced_cbce_beta099_2ep,class_balanced_cbce_beta099_2ep,0.6207870115762675,class_balanced_cbce_beta0999_2ep,0.3352941176470588,,,challenger,class_balanced
-6,focal_gamma1_2ep,focal_gamma1_2ep,0.6191096286531808,focal_gamma20_3ep,0.3,,,challenger,focal
-5,label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,0.6229579754516105,label_smoothing_eps01_2ep,0.3176470588235294,,,challenger,label_smoothing
-3,logit_adjustment_tau05_2ep,logit_adjustment_tau05_2ep,0.6172219522924072,logit_adjustment_tau15_2ep,0.3529411764705882,,,challenger,logit_adjustment
-6,ls_gdro_eps005_eta005_3ep,ls_gdro_eps005_eta005_3ep,0.5998254338634305,bert_gdro_eta01_2ep,0.2764705882352941,,,challenger,other
-3,rdrop_alpha20_2ep,rdrop_alpha20_2ep,0.6207123920042265,rdrop_alpha10_2ep,0.3117647058823529,,,challenger,rdrop
-3,weighted_sampler_citypow05_2ep,weighted_sampler_citypow05_2ep,0.6016061464289595,weighted_sampler_citypow15_2ep,0.288235294117647,,,challenger,weighted_sampler
-1,bert_adversarial,Adversarial Debiasing,0.5942314793308253,bert_adversarial,0.4294117647058823,,,main,adversarial
-1,bert_attr_reg,Attribution Regularization,0.6011648284423201,bert_attr_reg,0.33529411764705885,,,main,attr_reg
-1,bert_9classes_final,Baseline,0.621,bert_9classes_final,0.329,bert_9classes_final,0.07713248638838476,main,baseline
-2,combined_scrubbing_groupdro,Combined Best,0.5971173664042575,bert_debiased_combo,0.4058823529411764,combined_scrubbing_groupdro,0.0,main,combined
-1,bert_focal_loss,Focal Loss,0.6134318484078286,bert_focal_loss,0.3294117647058824,bert_focal_loss,0.06896551724137931,main,focal
-1,bert_gdro_eta01_2ep,GroupDRO η=0.1,0.552505752091434,bert_gdro_eta01_2ep,0.2647058823529411,bert_gdro_eta01_2ep,0.11578947368421053,main,groupdro
-1,bert_label_smoothing,Label Smoothing,0.6080545461159175,bert_label_smoothing,0.3294117647058824,bert_label_smoothing,0.10725952813067151,main,label_smoothing
-1,bert_oversample_only,Oversampling,0.611462531934235,bert_oversample_only,0.3583333333333333,bert_oversample_only,0.10036297640653358,main,oversampling
-1,bert_scrubbing,Data Scrubbing,0.6105665172611873,bert_scrubbing,0.30000000000000004,bert_scrubbing,0.0,main,scrubbing
+n_models,best_f1_model,best_f1_display,best_macro_f1,best_worstgap_model,best_worst_gap,best_flip_model,min_flip_rate,best_adv_pair_flip_model,min_adversarial_pair_flip_rate,best_en_transfer_f1_model,max_english_transfer_test_macro_f1,track,family_group
+3,class_balanced_cbce_beta099_2ep,class_balanced_cbce_beta099_2ep,0.6207870115762675,class_balanced_cbce_beta0999_2ep,0.3352941176470588,,,,,,,challenger,class_balanced
+6,focal_gamma1_2ep,focal_gamma1_2ep,0.6191096286531808,focal_gamma20_3ep,0.3,,,,,,,challenger,focal
+5,label_smoothing_eps01_2ep,label_smoothing_eps01_2ep,0.6229579754516105,label_smoothing_eps01_2ep,0.3176470588235294,,,,,,,challenger,label_smoothing
+3,logit_adjustment_tau05_2ep,logit_adjustment_tau05_2ep,0.6172219522924072,logit_adjustment_tau15_2ep,0.3529411764705882,,,,,,,challenger,logit_adjustment
+6,ls_gdro_eps005_eta005_3ep,ls_gdro_eps005_eta005_3ep,0.5998254338634305,bert_gdro_eta01_2ep,0.2764705882352941,,,,,,,challenger,other
+3,rdrop_alpha20_2ep,rdrop_alpha20_2ep,0.6207123920042265,rdrop_alpha10_2ep,0.3117647058823529,,,,,,,challenger,rdrop
+3,weighted_sampler_citypow05_2ep,weighted_sampler_citypow05_2ep,0.6016061464289595,weighted_sampler_citypow15_2ep,0.288235294117647,,,,,,,challenger,weighted_sampler
+1,bert_adversarial,Adversarial Debiasing,0.5942314793308253,bert_adversarial,0.4294117647058823,,,,,,,main,adversarial
+1,bert_attr_reg,Attribution Regularization,0.6011648284423201,bert_attr_reg,0.33529411764705885,,,,,,,main,attr_reg
+1,bert_9classes_final,Baseline,0.621,bert_9classes_final,0.329,bert_9classes_final,0.07713248638838476,bert_9classes_final,0.02403846153846154,bert_9classes_final,0.055912625805098926,main,baseline
+2,combined_scrubbing_groupdro,Combined Best,0.5971173664042575,bert_debiased_combo,0.4058823529411764,combined_scrubbing_groupdro,0.0,,,,,main,combined
+1,bert_focal_loss,Focal Loss,0.6134318484078286,bert_focal_loss,0.3294117647058824,bert_focal_loss,0.06896551724137931,,,,,main,focal
+1,bert_gdro_eta01_2ep,GroupDRO η=0.1,0.552505752091434,bert_gdro_eta01_2ep,0.2647058823529411,bert_gdro_eta01_2ep,0.11578947368421053,,,,,main,groupdro
+1,bert_label_smoothing,Label Smoothing,0.6080545461159175,bert_label_smoothing,0.3294117647058824,bert_label_smoothing,0.10725952813067151,,,,,main,label_smoothing
+1,bert_oversample_only,Oversampling,0.611462531934235,bert_oversample_only,0.3583333333333333,bert_oversample_only,0.10036297640653358,,,,,main,oversampling
+1,bert_scrubbing,Data Scrubbing,0.6105665172611873,bert_scrubbing,0.30000000000000004,bert_scrubbing,0.0,,,,,main,scrubbing

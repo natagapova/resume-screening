@@ -72,6 +72,21 @@
       "stem": "T10_main_track_merged_standard_fairness_cityswap",
       "csv": "T10_main_track_merged_standard_fairness_cityswap.csv",
       "tex": "T10_main_track_merged_standard_fairness_cityswap.tex"
+    },
+    {
+      "stem": "T11_adversarial_eval_main_track",
+      "csv": "T11_adversarial_eval_main_track.csv",
+      "tex": "T11_adversarial_eval_main_track.tex"
+    },
+    {
+      "stem": "T12_english_transfer_main_track",
+      "csv": "T12_english_transfer_main_track.csv",
+      "tex": "T12_english_transfer_main_track.tex"
+    },
+    {
+      "stem": "T14_main_track_merged_benchmark_bundle",
+      "csv": "T14_main_track_merged_benchmark_bundle.csv",
+      "tex": "T14_main_track_merged_benchmark_bundle.tex"
     }
   ],
   "figures": [

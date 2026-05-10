@@ -1,0 +1,11 @@
+display_name,model_name,adversarial_pair_flip_rate,adversarial_mean_delta_prob_true_class,adversarial_n_pairs_evaluated
+Baseline,bert_9classes_final,0.024,0.0,208.0
+GroupDRO η=0.1,bert_gdro_eta01_2ep,,,
+Focal Loss,bert_focal_loss,,,
+Label Smoothing,bert_label_smoothing,,,
+Adversarial Debiasing,bert_adversarial,,,
+Data Scrubbing,bert_scrubbing,,,
+Attribution Regularization,bert_attr_reg,,,
+Oversampling,bert_oversample_only,,,
+Combined Best,combined_scrubbing_groupdro,,,
+Combined Scrub + GroupDRO,bert_debiased_combo,,,

@@ -20,3 +20,4 @@ output/combined_scrubbing_groupdro/
 archive/
 notebooks/results/two-models-restore/restored_models/adversarial/
 notebooks/results/two-models-restore/restored_models/attr_reg/
+notebooks/english/__pycache__/
