@@ -1,8 +1,8 @@
-This document was last updated on **May 8, 2026**.
+This document was last updated on **May 11, 2026**.
 
 # Resume screening (BERT sequence classification)
 
-This repository contains **Jupyter notebooks**, **exported figures**, and **tabular result artifacts** for research on **automated resume screening** with **BERT-style sequence classification** (9 job categories). The focus is on **accuracy–fairness trade-offs**, **debiasing methods** (GroupDRO, scrubbing, focal loss, label smoothing, adversarial and attribution-regularized training, etc.), **interpretability** (Integrated Gradients), and **robustness checks** such as **city-swap** counterfactual evaluation.
+This repository contains **Jupyter notebooks**, **exported figures**, and **tabular result artifacts** for research on **automated resume screening** with **BERT-style sequence classification** (9 job categories). The focus is on **accuracy–fairness trade-offs**, **debiasing methods** (GroupDRO, scrubbing, focal loss, label smoothing, adversarial and attribution-regularized training, etc.), **interpretability** (Integrated Gradients), and **robustness checks** such as **city-swap** counterfactual evaluation (Russian in-domain and English transfer).
 
 ---
 
@@ -12,11 +12,12 @@ This repository contains **Jupyter notebooks**, **exported figures**, and **tabu
 
 | Path | What it is |
 |------|------------|
-| **`notebooks/`** | All experiment and analysis notebooks, plus reproducible outputs under `notebooks/results/`. |
-| **`figures/`** | Paper-, slide-, and report-ready plots (PNG/PDF) and companion CSV/JSON summaries produced from the notebooks. |
-| **`.gitignore`** | Defines paths that stay **local only** (datasets, checkpoints, virtualenvs, large logs). See [Not in this repository](#not-in-this-repository). |
+| **`notebooks/`** | Experiment and analysis notebooks, shared helpers, and reproducible outputs under `notebooks/results/`. |
+| **`figures/`** | Paper-, slide-, and report-ready plots (PNG/PDF) plus companion CSV/JSON summaries produced from notebooks. |
+| **`README.md`** | This map + what GitHub hides via `.gitignore`. |
+| **`.gitignore`** | Paths that stay **local only**. See [Not on GitHub (gitignored)](#not-on-github-gitignored). |
 
-There is **no** separate `src/` package: logic lives in the notebooks (typical for a thesis / research artifact repo).
+There is **no** separate `src/` package: most logic lives in the notebooks (research / thesis artifact layout).
 
 ---
 
@@ -24,10 +25,17 @@ There is **no** separate `src/` package: logic lives in the notebooks (typical f
 
 Numbered files follow an informal pipeline order. Prefix **`c`** = “challenger” hyperparameter or ablation studies; **`p`** = audit / plumbing notebooks.
 
-**Exploration and English transfer**
+**English evaluation (frozen checkpoints, transfer, city-swap)**
 
-- **`00_eda.ipynb`** — Exploratory data analysis on the main (structured) dataset.
-- **`01_english_dataset_eda.ipynb`**, **`02_english_dataset_transfer_pilot.ipynb`** — English résumé data: EDA and a small transfer pilot.
+- **`notebooks/english/e00_english_eval_overview.ipynb`** — Overview of the English evaluation stack.
+- **`e01_eval_bert_9classes_final.ipynb`**, **`e02_eval_bert_scrubbing.ipynb`**, **`e03_eval_label_smoothing_eps01_2ep.ipynb`** — Eval-only runs for specific Russian-trained checkpoints on English slices.
+- **`e04_english_benchmark_aggregate.ipynb`** — Aggregated English benchmark tables.
+- **`e05_english_city_swap_existing_models.ipynb`** — City-swap style stress tests on English (regenerates large pair exports; see gitignore note below).
+- **`e07_english_eval_common.py`** — Shared helpers imported by the English notebooks.
+
+**Exploration and English transfer (root-level notebooks)**
+
+- **`01_english_dataset_eda.ipynb`**, **`02_english_dataset_transfer_pilot.ipynb`** — English résumé data: EDA and transfer pilot.
 - **`32_english_dataset_alignment.ipynb`** — Aligning English labels/categories with the main task setup.
 
 **Baselines and data prep**
@@ -60,7 +68,7 @@ Numbered files follow an informal pipeline order. Prefix **`c`** = “challenger
 
 **`notebooks/challengers/`**
 
-Tuning and comparison notebooks for alternative losses and training tricks, e.g. GroupDRO tuning, focal loss, label smoothing (several eps schedules), class-balanced losses, logit adjustment, R-Drop, re-seed comparisons, and challenger city-swap evaluation (`c10_*.ipynb`). Start from **`c00_compare_challengers_and_all_models.ipynb`** for an overview workflow.
+Tuning and comparison notebooks for alternative losses and training tricks, e.g. GroupDRO tuning, focal loss, label smoothing (several ε schedules), class-balanced losses, logit adjustment, R-Drop, re-seed comparisons, and challenger city-swap evaluation (`c10_*.ipynb`). Start from **`c00_compare_challengers_and_all_models.ipynb`** for an overview workflow.
 
 **Audit / maintenance**
 
@@ -70,13 +78,14 @@ Tuning and comparison notebooks for alternative losses and training tricks, e.g.
 
 ### `notebooks/results/` — saved metrics and tables
 
-Exported **CSV**, **JSON**, **TXT**, and some **PNG** files from runs so comparisons do not depend on re-executing every notebook. Subfolders mirror experiment themes, for example:
+Exported **CSV**, **JSON**, **TXT**, **TeX**, and some **PNG** files from runs so comparisons do not depend on re-executing every notebook. Subfolders mirror experiment themes, for example:
 
+- **`table_export/`** — Machine-generated **`T*.tex`** / **`T*.csv`** fragments (unified ledgers, city-swap, English transfer, dataset splits, etc.) meant for papers and appendices.
 - **`model_diagnostics/`** — Per-model diagnostic CSVs (baseline, GroupDRO, scrubbing, oversampling, focal, adversarial, label smoothing, attribution regularization, combined best, etc.) plus **`model_diagnostics_summary.csv`**.
-- **`english_dataset_alignment/`**, **`english_dataset_transfer_pilot/`** — Outputs from notebooks `32` and `02`.
+- **`english_dataset_alignment/`**, **`english_dataset_transfer_pilot/`**, **`english_eval/`**, **`english_transfer_eval/`**, **`english_city_swap_eval/`**, **`english_balanced_eval/`** — Outputs from the English alignment / eval / city-swap workflows.
 - **`challengers_city_swap/`**, **`city_swap_all/`**, **`cross_run_city_swap_comparison/`** — City-swap summaries and charts.
-- **`two-models-restore/`** — Restore audit (`model_recovery_audit/`), restored-model city-swap summaries, and **`restored_models/`** verification tables (large binary checkpoints themselves are gitignored).
-- **`unified_comparison/`** — Unified comparison table, report, and **`c71_accuracy_vs_gap.png`**.
+- **`two-models-restore/`** — Restore audit (`model_recovery_audit/`), restored-model city-swap summaries, and **`restored_models/`** verification tables (large binary checkpoints under specific subtrees are gitignored).
+- **`unified_comparison/`** — Unified comparison table, report, and companion plots (e.g. **`c71_accuracy_vs_gap.png`**).
 
 Paths under `notebooks/results/` are **versioned** when they are small text/tabular artifacts; regenerate them by running the corresponding notebooks if you change code or data.
 
@@ -89,34 +98,44 @@ High-level outputs used in documents and talks:
 - **Root** — Accuracy/fairness comparison plots, trade-off scatters, Integrated Gradients figure sets, city TPR heatmaps, etc.
 - **`figures/challengers/`** — Summaries and scatter plots for challenger-method sweeps (CSVs + key PNGs/PDFs).
 - **`figures/slides_figures/`** — Slide-sized explanatory figures (distributions, TPR gaps, methods overview, debiasing outcomes).
-- **`figures/english_dataset_alignment/`**, **`figures/english_dataset_transfer_pilot/`** — Plots tied to English dataset work.
-- **`figures/cross_run_city_swap_comparison/`** — Cross-run city-swap visualization.
+- **`figures/paper_figures/`** — Export-quality PDF/PNG pairs for write-ups (unified comparison panels, fairness vs. city-swap scatters, etc.).
+- **`figures/integrated_gradients_extended/`** — Extended IG comparison grids and heatmaps.
+- **`figures/english_dataset_alignment/`**, **`figures/english_dataset_transfer_pilot/`**, **`figures/english_eval/`**, **`figures/english_transfer_eval/`**, **`figures/english_city_swap_eval/`** — Plots tied to English dataset and eval work.
+- **`figures/cross_run_city_swap_comparison/`**, **`figures/cross_run_city_swap/`** — Cross-run city-swap visualization.
+- **`figures/dataset_audit/`**, **`figures/adversarial_eval_design/`** — Dataset and adversarial-eval schematics.
 
-If you need the **exact** notebook that produced a file, open the notebook with the matching experiment id (e.g. `50_*` for many paper figures, `51_*` for slides).
+If you need the **exact** notebook that produced a file, open the notebook with the matching experiment id (e.g. `50_*` for many paper figures, `51_*` for slides, `e0*` for English eval).
 
 ---
 
-## Not in this repository
+## Not on GitHub (gitignored)
 
-The following are **intentionally excluded** (see `.gitignore`) and will not appear in a clean clone unless you create them locally:
+These paths are **intentionally excluded** (see `.gitignore`). A **clean GitHub clone** will not contain them unless you create or copy them locally:
 
-- **Raw and processed datasets** (`data/`)
-- **Trained weights** (`models/`, `*.pt`, `*.pkl`, `*.joblib`, and named checkpoint dirs such as `bert_9classes/`, …)
-- **Experiment dumps** (`runs/`, local `archive/`, draft folders)
-- **Virtual environments** (`venv/`, `.venv/`)
-- **Large restored checkpoint trees** under some `notebooks/results/two-models-restore/restored_models/...` paths
+| Category | Paths / patterns |
+|----------|------------------|
+| **LaTeX / ICML drafts** | **`icml2026/`** (entire directory: style file, main `.tex`, appendix snippets, local PDFs, etc.) — **not visible on GitHub** with the current ignore rule. |
+| **Primary EDA notebook** | **`notebooks/00_eda.ipynb`** — listed in `.gitignore` (keep a private copy locally if you use it). |
+| **Data & weights** | **`data/`**, **`models/`**, **`*.pt`**, **`*.pkl`**, **`*.joblib`**, checkpoint dirs such as **`bert_9classes/`**, **`bert_9classes_sqrt_rw_2ep/`**, **`bert_9classes_gdro/`** |
+| **Environment & IDE** | **`venv/`**, **`.venv/`**, **`.vscode/`**, **`.DS_Store`** |
+| **Experiment noise** | **`runs/`**, **`archive/`**, **`drafts/`**, **`local_bert/`**, **`output/combined_scrubbing_groupdro/`**, **`notebooks/notebooks/`** (duplicate tree guard) |
+| **Large / binary artifacts** | Partial trees under **`notebooks/results/two-models-restore/restored_models/adversarial/`** and **`.../attr_reg/`**; **`**/predictions_english_city_swap_pairs.csv`** (very large; regenerate via **`e05_english_city_swap_existing_models.ipynb`**) |
+| **Caches** | **`__pycache__/`**, **`*.pyc`**, **`*.ipynb_checkpoints`** |
+| **Local tool logs** | **`.brew-texlive-install.log`** |
 
-You must supply **your own data** and **train or copy checkpoints** locally to reproduce training from scratch. Many **metrics and figures** are still available from `notebooks/results/` and `figures/` without rerunning GPU training.
+You must supply **your own data** and **train or copy checkpoints** locally to reproduce training from scratch. Many **metrics, TeX table exports, and figures** are still available from `notebooks/results/` and `figures/` without rerunning GPU training.
+
+To **publish LaTeX sources** or share `icml2026/` on GitHub, narrow or remove the corresponding line in `.gitignore` and commit only what you intend to license.
 
 ---
 
 ## Getting started
 
-1. **Clone the repository** (replace the URL with yours):
+1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
+   git clone https://github.com/natagapova/resume-screening.git
+   cd resume-screening
    ```
 
 2. **Create a virtual environment** and install dependencies. This repo does **not** ship a pinned `requirements.txt`; install a standard PyTorch + NLP stack used by the notebooks, for example:
@@ -129,7 +148,7 @@ You must supply **your own data** and **train or copy checkpoints** locally to r
 
 3. **Add data** under `data/` (ignored by git) following the paths expected in the notebooks (e.g. processed CSV splits if you preprocess locally).
 
-4. **Run notebooks** in order of interest; for a high-level path: EDA → `24_finetuned_bert` → debiasing notebooks → `40`/`42` fairness → `41` IG → `50`/`51` figures.
+4. **Run notebooks** in order of interest; for a high-level path: English quick path → `notebooks/english/e00_*` → root `32_*` / `02_*` as needed; Russian path → `24_finetuned_bert` → debiasing notebooks → `40`/`42` fairness → `41` IG → `50`/`51` figures → `70`–`73` city-swap.
 
 ---
 
@@ -157,3 +176,4 @@ Illustrative numbers from a **BERT + sqrt_rw** baseline on **non-public** data (
 
 - This project is intended for **research and thesis reproducibility**, not production deployment.
 - If something is missing after clone, check **`.gitignore`** first—it is usually deliberate.
+- **GitHub’s file view** will not list ignored paths; use this README + `.gitignore` as the source of truth for “what exists locally vs. on the remote.”
