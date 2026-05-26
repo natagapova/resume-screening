@@ -1,4 +1,4 @@
-This document was last updated on **May 11, 2026**.
+This document was last updated on **May 26, 2026**.
 
 # Resume screening (BERT sequence classification)
 
@@ -14,6 +14,7 @@ This repository contains **Jupyter notebooks**, **exported figures**, and **tabu
 |------|------------|
 | **`notebooks/`** | Experiment and analysis notebooks, shared helpers, and reproducible outputs under `notebooks/results/`. |
 | **`figures/`** | Paper-, slide-, and report-ready plots (PNG/PDF) plus companion CSV/JSON summaries produced from notebooks. |
+| **`thesis/`** | VKR LaTeX (`thesis.pdf`, English) and Russian **`annotation.pdf`**. Build instructions: **[`thesis/README.md`](thesis/README.md)**. |
 | **`README.md`** | This map + what GitHub hides via `.gitignore`. |
 | **`.gitignore`** | Paths that stay **local only**. See [Not on GitHub (gitignored)](#not-on-github-gitignored). |
 
@@ -115,6 +116,7 @@ These paths are **intentionally excluded** (see `.gitignore`). A **clean GitHub 
 | Category | Paths / patterns |
 |----------|------------------|
 | **LaTeX / ICML drafts** | **`icml2026/`** (entire directory: style file, main `.tex`, appendix snippets, local PDFs, etc.) — **not visible on GitHub** with the current ignore rule. |
+| **Thesis sources** | **`thesis/*`** except **`thesis/thesis.pdf`** — LaTeX, `annotation.pdf`, title PDFs, and build aux files stay local unless you change `.gitignore`. |
 | **Primary EDA notebook** | **`notebooks/00_eda.ipynb`** — listed in `.gitignore` (keep a private copy locally if you use it). |
 | **Data & weights** | **`data/`**, **`models/`**, **`*.pt`**, **`*.pkl`**, **`*.joblib`**, checkpoint dirs such as **`bert_9classes/`**, **`bert_9classes_sqrt_rw_2ep/`**, **`bert_9classes_gdro/`** |
 | **Environment & IDE** | **`venv/`**, **`.venv/`**, **`.vscode/`**, **`.DS_Store`** |
@@ -149,6 +151,16 @@ To **publish LaTeX sources** or share `icml2026/` on GitHub, narrow or remove th
 3. **Add data** under `data/` (ignored by git) following the paths expected in the notebooks (e.g. processed CSV splits if you preprocess locally).
 
 4. **Run notebooks** in order of interest; for a high-level path: English quick path → `notebooks/english/e00_*` → root `32_*` / `02_*` as needed; Russian path → `24_finetuned_bert` → debiasing notebooks → `40`/`42` fairness → `41` IG → `50`/`51` figures → `70`–`73` city-swap.
+
+5. **Build the thesis PDFs** (XeLaTeX + biber, Times New Roman):
+
+   ```bash
+   cd thesis
+   latexmk -xelatex thesis.tex
+   latexmk -xelatex annotation.tex
+   ```
+
+   See **[`thesis/README.md`](thesis/README.md)** for structure, title pages, troubleshooting, and submission checklist.
 
 ---
 
