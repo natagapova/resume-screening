@@ -1,0 +1,2 @@
+base_model,method,tau,accuracy,macro_f1,overall_flip_rate,flip_Москва,flip_Екатеринбург,flip_Новосибирск,flip_Краснодар,flip_Воронеж
+label_smoothing_eps01_2ep,Post-hoc Logit Adjustment on LS eps01,0.5,0.6061705989110708,0.6237200855928051,0.07023593466424682,0.015789473684210527,0.033030852994555354,0.028130671506352088,0.03865698729582577,0.03030852994555354

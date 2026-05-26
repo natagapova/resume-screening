@@ -1,0 +1,2 @@
+model_name,method,smoothing,kl_alpha,epochs,accuracy,macro_f1,worst_gap,macro_gap,model_dir
+label_smoothing_rdrop_eps01_alpha10_2ep,Label Smoothing + R-Drop + sqrt_rw,0.1,1.0,2,0.6068965517241379,0.6203841850650377,0.33529411764705885,0.13003289159966436,notebooks/models/challengers/label_smoothing_rdrop_eps01_alpha10_2ep

@@ -1,0 +1,19 @@
+=== C18 Scrub + GroupDRO city-swap summary ===
+notebook: c18
+model_name: scrubbing_gdro_eta005_2ep
+eta: 0.05
+status: ok
+accuracy: 0.588021778584392
+macro_f1: 0.6006296378464132
+overall_flip_rate: 0.0014519056261343012
+error: -
+------------------------------------------------------------
+notebook: c18
+model_name: scrubbing_gdro_eta01_2ep
+eta: 0.1
+status: ok
+accuracy: 0.5767695099818512
+macro_f1: 0.5884500494922482
+overall_flip_rate: 0.0
+error: -
+------------------------------------------------------------

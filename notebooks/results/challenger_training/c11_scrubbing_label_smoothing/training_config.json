@@ -1,0 +1,15 @@
+{
+  "method": "Data Scrubbing + Label Smoothing + sqrt_rw",
+  "model_name": "scrubbing_label_smoothing_eps01_2ep",
+  "scrubbing": true,
+  "scrubbed_words_count": 70,
+  "smoothing": 0.1,
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "accuracy": 0.6054446460980036,
+  "macro_f1": 0.6203699309632715,
+  "tpr_gap_worst_robust": 0.32352941176470584,
+  "tpr_gap_macro_robust": 0.12712058194538114
+}

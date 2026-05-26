@@ -1,0 +1,27 @@
+{
+  "notebook": "c18",
+  "model_name": "scrubbing_gdro_eta01_2ep",
+  "method": "Scrub + GroupDRO + sqrt_rw",
+  "eta": 0.1,
+  "scrub_at_inference": true,
+  "accuracy": 0.5767695099818512,
+  "macro_f1": 0.5884500494922482,
+  "overall_flip_rate": 0.0,
+  "per_swap_city": {
+    "Москва": {
+      "flip_rate": 0.0
+    },
+    "Екатеринбург": {
+      "flip_rate": 0.0
+    },
+    "Новосибирск": {
+      "flip_rate": 0.0
+    },
+    "Краснодар": {
+      "flip_rate": 0.0
+    },
+    "Воронеж": {
+      "flip_rate": 0.0
+    }
+  }
+}

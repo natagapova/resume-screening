@@ -1,0 +1,26 @@
+{
+  "notebook": "c11",
+  "model_name": "scrubbing_label_smoothing_eps01_2ep",
+  "method": "Scrub + LS + sqrt_rw",
+  "scrub_at_inference": true,
+  "accuracy": 0.6054446460980036,
+  "macro_f1": 0.6203699309632715,
+  "overall_flip_rate": 0.001633393829401089,
+  "per_swap_city": {
+    "Москва": {
+      "flip_rate": 0.001633393829401089
+    },
+    "Екатеринбург": {
+      "flip_rate": 0.001633393829401089
+    },
+    "Новосибирск": {
+      "flip_rate": 0.001633393829401089
+    },
+    "Краснодар": {
+      "flip_rate": 0.001633393829401089
+    },
+    "Воронеж": {
+      "flip_rate": 0.001633393829401089
+    }
+  }
+}

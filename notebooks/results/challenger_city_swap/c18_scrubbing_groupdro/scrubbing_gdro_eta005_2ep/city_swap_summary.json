@@ -1,0 +1,27 @@
+{
+  "notebook": "c18",
+  "model_name": "scrubbing_gdro_eta005_2ep",
+  "method": "Scrub + GroupDRO + sqrt_rw",
+  "eta": 0.05,
+  "scrub_at_inference": true,
+  "accuracy": 0.588021778584392,
+  "macro_f1": 0.6006296378464132,
+  "overall_flip_rate": 0.0014519056261343012,
+  "per_swap_city": {
+    "Москва": {
+      "flip_rate": 0.0014519056261343012
+    },
+    "Екатеринбург": {
+      "flip_rate": 0.0014519056261343012
+    },
+    "Новосибирск": {
+      "flip_rate": 0.0014519056261343012
+    },
+    "Краснодар": {
+      "flip_rate": 0.0014519056261343012
+    },
+    "Воронеж": {
+      "flip_rate": 0.0014519056261343012
+    }
+  }
+}

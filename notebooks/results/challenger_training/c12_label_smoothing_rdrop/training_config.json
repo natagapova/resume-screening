@@ -1,0 +1,14 @@
+{
+  "method": "Label Smoothing + R-Drop + sqrt_rw",
+  "model_name": "label_smoothing_rdrop_eps01_alpha10_2ep",
+  "smoothing": 0.1,
+  "kl_alpha": 1.0,
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "accuracy": 0.6068965517241379,
+  "macro_f1": 0.6203841850650377,
+  "tpr_gap_worst_robust": 0.33529411764705885,
+  "tpr_gap_macro_robust": 0.13003289159966436
+}

@@ -1,0 +1,33 @@
+=== C15 Tier-1 combo city-swap summary ===
+notebook: c11
+model_name: scrubbing_label_smoothing_eps01_2ep
+status: ok
+accuracy: 0.6054446460980036
+macro_f1: 0.6203699309632715
+overall_flip_rate: 0.001633393829401089
+error: -
+------------------------------------------------------------
+notebook: c12
+model_name: label_smoothing_rdrop_eps01_alpha10_2ep
+status: ok
+accuracy: 0.6068965517241379
+macro_f1: 0.6203841850650377
+overall_flip_rate: 0.06043557168784029
+error: -
+------------------------------------------------------------
+notebook: c13
+model_name: scrubbing_rdrop_alpha10_2ep
+status: ok
+accuracy: 0.6063520871143375
+macro_f1: 0.622049020599317
+overall_flip_rate: 0.0009074410163339383
+error: -
+------------------------------------------------------------
+notebook: c14
+model_name: class_balanced_ls_eps01_beta099_2ep
+status: ok
+accuracy: 0.6030852994555354
+macro_f1: 0.6172445794962903
+overall_flip_rate: 0.08620689655172414
+error: -
+------------------------------------------------------------

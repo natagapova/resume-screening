@@ -1,0 +1,17 @@
+{
+  "method": "Data Scrubbing + GroupDRO + sqrt_rw",
+  "model_name": "scrubbing_gdro_eta005_2ep",
+  "scrubbing": true,
+  "scrub_at_inference": true,
+  "scrubbed_words_count": 70,
+  "groupdro_eta": 0.05,
+  "num_groups": 41,
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "accuracy": 0.588021778584392,
+  "macro_f1": 0.6006296378464132,
+  "tpr_gap_worst_robust": 0.35882352941176476,
+  "tpr_gap_macro_robust": 0.11749080554161839
+}

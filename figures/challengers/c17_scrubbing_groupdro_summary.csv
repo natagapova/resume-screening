@@ -1,0 +1,3 @@
+model_name,method,eta,epochs,accuracy,macro_f1,worst_gap,macro_gap,model_dir
+scrubbing_gdro_eta01_2ep,Data Scrubbing + GroupDRO + sqrt_rw,0.1,2,0.5767695099818512,0.5884500494922482,0.32352941176470584,0.1267633289444828,notebooks/models/challengers/scrubbing_gdro_eta01_2ep
+scrubbing_gdro_eta005_2ep,Data Scrubbing + GroupDRO + sqrt_rw,0.05,2,0.588021778584392,0.6006296378464132,0.35882352941176476,0.11749080554161839,notebooks/models/challengers/scrubbing_gdro_eta005_2ep

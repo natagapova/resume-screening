@@ -1,0 +1,3 @@
+notebook,model_name,method,eta,scrub_at_inference,model_dir,accuracy,macro_f1,overall_flip_rate,status,error,flip_Москва,flip_Екатеринбург,flip_Новосибирск,flip_Краснодар,flip_Воронеж
+c18,scrubbing_gdro_eta005_2ep,Scrub + GroupDRO + sqrt_rw,0.05,True,notebooks/models/challengers/scrubbing_gdro_eta005_2ep,0.588021778584392,0.6006296378464132,0.0014519056261343012,ok,,0.0014519056261343012,0.0014519056261343012,0.0014519056261343012,0.0014519056261343012,0.0014519056261343012
+c18,scrubbing_gdro_eta01_2ep,Scrub + GroupDRO + sqrt_rw,0.1,True,notebooks/models/challengers/scrubbing_gdro_eta01_2ep,0.5767695099818512,0.5884500494922482,0.0,ok,,0.0,0.0,0.0,0.0,0.0

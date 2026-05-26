@@ -1,0 +1,15 @@
+{
+  "method": "Data Scrubbing + R-Drop + sqrt_rw",
+  "model_name": "scrubbing_rdrop_alpha10_2ep",
+  "scrubbing": true,
+  "scrubbed_words_count": 70,
+  "kl_alpha": 1.0,
+  "epochs": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "accuracy": 0.6063520871143375,
+  "macro_f1": 0.622049020599317,
+  "tpr_gap_worst_robust": 0.32352941176470584,
+  "tpr_gap_macro_robust": 0.1302166218350813
+}

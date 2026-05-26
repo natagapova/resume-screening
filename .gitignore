@@ -26,7 +26,30 @@ notebooks/results/two-models-restore/restored_models/attr_reg/
 __pycache__/
 *.py[cod]
 *$py.class
+# Experimental notebook downloads (checkpoint cache)
+notebooks/experimental/_e99_cloud_model_cache/
+
 # latex
 icml2026/
 .vscode/
 .brew-texlive-install.log
+
+# LaTeX build artifacts (thesis)
+thesis/**/*.aux
+thesis/**/*.log
+thesis/**/*.bcf
+thesis/**/*.blg
+thesis/**/*.bbl
+thesis/**/*.fls
+thesis/**/*.fdb_latexmk
+thesis/**/*.out
+thesis/**/*.toc
+thesis/**/*.run.xml
+thesis/**/*.synctex.gz
+thesis/missfont.log
+thesis/thesis/
+
+scripts/
+thesis/*
+!thesis/thesis.pdf
+.cursorignore

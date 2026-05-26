@@ -1,0 +1,2 @@
+model_name,method,smoothing,epochs,accuracy,macro_f1,worst_gap,macro_gap,model_dir
+scrubbing_label_smoothing_eps01_2ep,Data Scrubbing + Label Smoothing + sqrt_rw,0.1,2,0.6054446460980036,0.6203699309632715,0.32352941176470584,0.12712058194538114,notebooks/models/challengers/scrubbing_label_smoothing_eps01_2ep

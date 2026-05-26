@@ -1,0 +1,2 @@
+model_name,method,beta,smoothing,epochs,accuracy,macro_f1,worst_gap,macro_gap,model_dir
+class_balanced_ls_eps01_beta099_2ep,Class-Balanced CE + Label Smoothing + sqrt_rw,0.99,0.1,2,0.6030852994555354,0.6172445794962903,0.3411764705882353,0.12371418688377117,notebooks/models/challengers/class_balanced_ls_eps01_beta099_2ep

@@ -1,0 +1,39 @@
+{
+  "method": "Post-hoc Logit Adjustment on LS eps01",
+  "base_model": "label_smoothing_eps01_2ep",
+  "tau_values": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "best_tau": 0.3,
+  "results": [
+    {
+      "base_model": "label_smoothing_eps01_2ep",
+      "method": "Post-hoc Logit Adjustment on LS eps01",
+      "tau": 0.3,
+      "accuracy": 0.6096188747731397,
+      "macro_f1": 0.6260301898810607,
+      "worst_gap": 0.3411764705882353,
+      "macro_gap": 0.1296331272928089
+    },
+    {
+      "base_model": "label_smoothing_eps01_2ep",
+      "method": "Post-hoc Logit Adjustment on LS eps01",
+      "tau": 0.5,
+      "accuracy": 0.6061705989110708,
+      "macro_f1": 0.6237200855928051,
+      "worst_gap": 0.34705882352941175,
+      "macro_gap": 0.12545732020620845
+    },
+    {
+      "base_model": "label_smoothing_eps01_2ep",
+      "method": "Post-hoc Logit Adjustment on LS eps01",
+      "tau": 0.7,
+      "accuracy": 0.6056261343012704,
+      "macro_f1": 0.6243105592979975,
+      "worst_gap": 0.34705882352941175,
+      "macro_gap": 0.1250462737279919
+    }
+  ]
+}
