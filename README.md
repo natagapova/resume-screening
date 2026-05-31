@@ -1,8 +1,32 @@
-This document was last updated on **May 26, 2026**.
+This document was last updated on **May 31, 2026**.
 
 # Resume screening (BERT sequence classification)
 
-This repository contains **Jupyter notebooks**, **exported figures**, and **tabular result artifacts** for research on **automated resume screening** with **BERT-style sequence classification** (9 job categories). The focus is on **accuracy–fairness trade-offs**, **debiasing methods** (GroupDRO, scrubbing, focal loss, label smoothing, adversarial and attribution-regularized training, etc.), **interpretability** (Integrated Gradients), and **robustness checks** such as **city-swap** counterfactual evaluation (Russian in-domain and English transfer).
+This repository holds my **diploma / thesis** project on **automated resume screening** with **BERT-based sequence classification** (9 IT supercategories, Russian HeadHunter data).
+
+It extends my earlier work in [`xai-resume-bias`](https://github.com/natagapova/xai-resume-bias), where I studied bias in resume classification with **Integrated Gradients**. Here, that line of research grew into a larger **audit-first** study of **fairness**, **debiasing strategies**, **interpretability**, and **robustness** (including **city-swap** counterfactuals and English transfer checks).
+
+Parts of this work were presented at **MathAI 2026**.
+
+<p align="center">
+  <a href="figures/unified_comparison/fig01_accuracy_vs_worst_gap.png">
+    <img src="figures/unified_comparison/fig01_accuracy_vs_worst_gap.png" alt="Macro accuracy vs worst-case TPR gap across trained models" width="720">
+  </a>
+  <br>
+  <em>Accuracy–fairness trade-off (unified model comparison; see <code>71_unified_models_comparison.ipynb</code>).</em>
+</p>
+
+## Quick links
+
+- [**Thesis PDF**](thesis/thesis.pdf) — full VKR write-up ([build](thesis/README.md))
+- [**Key figures**](figures/) — paper/slide exports ([`figures/paper_figures/`](figures/paper_figures/), [`figures/challengers/`](figures/challengers/))
+- [**Unified comparison table**](notebooks/results/unified_comparison/c71_unified_models_table.csv) — all models, metrics, and ranks ([full table](notebooks/results/unified_comparison/01_unified_models_full_table.csv))
+- [**Main training notebook**](notebooks/24_finetuned_bert.ipynb) — core BERT fine-tuning on 9 supercategories
+
+- **Task:** audit-first evaluation of **BERT-based IT resume screening** (9 supercategories, Russian HeadHunter data).
+- **Research focus:** **geographic proxy bias** (41 city groups), with gender/age gaps for comparison; utility vs.\ group fairness vs.\ wording robustness.
+- **Methods:** fine-tuned BERT + debiasing benchmarks (GroupDRO, scrubbing, label smoothing, R-Drop, class-balanced losses, combinations); **Integrated Gradients**; **city-swap** counterfactuals; English transfer eval.
+- **Main results:** written-up trade-offs in **[`thesis/thesis.pdf`](thesis/thesis.pdf)** (build: [`thesis/README.md`](thesis/README.md)); tables in **`notebooks/results/unified_comparison/`** and **`notebooks/results/table_export/`**; plots in **`figures/`** and **`figures/challengers/`**.
 
 ---
 
