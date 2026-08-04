@@ -1,40 +1,68 @@
-# Virtual environments
+# OS / IDE
+**/.DS_Store
 .DS_Store
+.vscode/
+.cursor/
+
+# Virtual environments
 venv/
 .venv/
+
+# Data and model weights (local only)
 data/
 models/
+notebooks/models/
 *.pkl
 *.pt
 *.joblib
-runs/
-*.ipynb_checkpoints
+*.safetensors
+*.bin
+*.ckpt
+checkpoints/
 bert_9classes/
 bert_9classes_sqrt_rw_2ep/
 bert_9classes_gdro/
-drafts/
 local_bert/
-notebooks/notebooks/
-notebooks/00_eda.ipynb
-output/combined_scrubbing_groupdro/
+wandb/
+.cache/
+.huggingface/
+
+# Experiment outputs
+runs/
+drafts/
 archive/
-# City-swap pair predictions are huge (>100MB); reproduce via e05 notebook
-**/predictions_english_city_swap_pairs.csv
+output/
+output/combined_scrubbing_groupdro/
+notebooks/notebooks/
+notebooks/experimental/_e99_cloud_model_cache/
+
+# Private / oversized notebooks
+notebooks/00_eda.ipynb
+
+# Large row-level predictions (regenerate from eval notebooks)
+**/predictions_*.csv
+**/*city_swap_counterfactuals.csv
+**/*_base_eval_slice.csv
+notebooks/results/integrated_gradients_extended/01_subset_predictions_wide.csv
+notebooks/results/english_balanced_eval/english_balanced_8class_eval.csv
+notebooks/results/english_balanced_eval/english_eval_hard_90cap_archive.csv
+notebooks/results/adversarial_resume_pairs/adversarial_resume_pairs.csv
+notebooks/results/adversarial_model_eval/bert_9classes_final/predictions_adversarial_pairs.csv
+
+# Restored checkpoint trees (binary)
 notebooks/results/two-models-restore/restored_models/adversarial/
 notebooks/results/two-models-restore/restored_models/attr_reg/
-# Python bytecode / caches
+
+# Python caches
 __pycache__/
 *.py[cod]
 *$py.class
-# Experimental notebook downloads (checkpoint cache)
-notebooks/experimental/_e99_cloud_model_cache/
+*.ipynb_checkpoints
+**/.ipynb_checkpoints/
 
-# latex
+# LaTeX drafts and build artifacts
 icml2026/
-.vscode/
 .brew-texlive-install.log
-
-# LaTeX build artifacts (thesis)
 thesis/**/*.aux
 thesis/**/*.log
 thesis/**/*.bcf
@@ -48,8 +76,10 @@ thesis/**/*.run.xml
 thesis/**/*.synctex.gz
 thesis/missfont.log
 thesis/thesis/
-
-scripts/
 thesis/*
 !thesis/thesis.pdf
+
+# Local scripts (not part of published artifact)
+scripts/
+
 .cursorignore
